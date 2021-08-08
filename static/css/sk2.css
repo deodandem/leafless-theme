@@ -11,6 +11,7 @@ img {
 a {
     text-decoration: none;
     transition: 0.3s ease-in-out;  
+    color: green;
 }
 
 .content-box {
@@ -18,8 +19,7 @@ a {
     padding: 50px;
     border: 1px solid grey;
     width: 70%;
-    max-width: 800px;
-    margin-bottom:50px;
+    margin: auto;
     
 }
 
@@ -31,14 +31,19 @@ a:hover {
 }
 .title {
     font-size: 100px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-    margin-bottom:0px;
+  width: 100%;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-dot {
@@ -53,16 +58,22 @@ header h3 {
   margin-block-start: 0px;
 }
 
-.flex-right {
+.menubar {
   border: 2.5px solid black;
   border-radius: 10px;
   padding: 10px;
   font-size: 35px;
-  margin-top: 50px;
-  margin-bottom: -10;
-  width: 80%;
-  max-width: 880px;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  width: 20%;
+  max-width: 1140px;
   align-content: left;
+  position: relative;
+}
+.flex-right {
+  margin-left: 60%;
+  align-content: right;
 }
 
 .pagination li,
@@ -79,11 +90,9 @@ header nav li {
 .main,
 header,
 footer {
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 3em;
-  margin-bottom: 10%;
-  display: block;
+  margin: auto;
+  margin-top: 2em;
+  width: 90%;
 }
 
 .card {
@@ -98,7 +107,7 @@ footer {
   box-sizing: border-box;
   background-size: 550px;
   background-position: center;
-  transition: 0.3s ease-in-out;  
+  transition: 0.3s ease-in-out;
 }
 
 .card:hover{
@@ -116,6 +125,7 @@ footer {
 
 .card-box {
   width: 100%;
+  align-content: center;
 }
 
 .card-date {
@@ -131,7 +141,18 @@ footer {
 }
 
 .pad-r-5px {
+  text-align: right;
+  color: black;
   padding-right: 5px;
+  margin-top: 8px;
+}
+
+.footer {
+  text-align: center;
+  color: black;
+  padding-right: 5px;
+  margin-bottom: 4em;
+  margin-top: 6em;
 }
 
 /* toc */

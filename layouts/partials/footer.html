@@ -1,18 +1,16 @@
-<footer class="flex">
+<footer class="footer">
 
 	{{if site.Copyright}}
-		<div class="pad-r-5px">{{site.Copyright}}</div>
+		<div class="footer">{{site.Copyright}}
 	{{else}}
-		<div class="pad-r-5px">
 		©
 		{{with site.Params.startdate}}
 			{{dateFormat "2006" .}}-
 		{{- end}}
 		{{- now.Format "2006"}} DCP —
-		</div>
 	{{end}}
-	<div class="pad-r-5px">Powered by <a href="https://gohugo.io">Hugo</a> — </div>
-	<div>Theme <a href="https://github.com/J-Siu/hugo-theme-sk2/">SK2</a></div>
+	Powered by <a href="https://gohugo.io">&nbsp;Hugo</a> — 
+    Theme <a href="https://github.com/J-Siu/hugo-theme-sk2/">&nbsp;SK2</a></div>
 
 </footer>
 

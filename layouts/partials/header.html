@@ -1,6 +1,6 @@
 <header class="flex">
 
-<div class="title"><a href="{{relLangURL ""}}"><b>{{site.Title}}</b></a></div>
+<div class="title"><a href="{{relLangURL ""}}"><b>{{site.Title}}</b></a>
 
 {{with site.Params.subtitle}}<div class="subtitle">{{.}}</div>{{end}}
 
@@ -8,7 +8,7 @@
 <!--
 <button type="button" class="collapsible">Menu</button>
 -->
-<nav class="flex-right">
+<nav class="menubar">
 	{{$currentPage := .}}
 	{{range site.Menus.main}}
 		{{if .HasChildren}}
@@ -36,5 +36,7 @@
 	{{end}}
 </nav>
 {{end}}
+    
+    </div>
 
 </header>

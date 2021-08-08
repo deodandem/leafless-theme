@@ -28,7 +28,7 @@
 	{{template "_internal/pagination.html" .}}
 
 	<!--list-->
-	<section class="flex">
+	<div class="flex">
 		{{range $paginator.Pages}}
 		<a href="{{.RelPermalink}}">
         <div class="card" style="background-image: url({{.Param "thumbnail"}})">
@@ -41,7 +41,7 @@
         </a>
 
 		{{end}}
-	</section>
+	</div>
 
 </div>
 {{end}}
