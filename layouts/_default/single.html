@@ -11,11 +11,14 @@
 
 	<!--Content-->
     <div class="content-box">
+    <h1>{{.Title}}</h1>   
+        <!--Date--><div class="subtitle">
+        {{with .Lastmod}}{{dateFormat "Monday, 1/2/06 at 3:04 PM" .}}{{end}}</div>
+    
+
+        
 	{{with .Content}}<content>{{.}}</content>{{end}}
     
-	<!--Date-->
-	{{with .Lastmod}}<div class="pad-r-5px">{{dateFormat "2006-01-02" .}}</div>{{end}}
-
 	<!--Tag-->
 		<div class="pad-r-5px">Tags:</div>
 		{{range (.GetTerms "tags")}}
