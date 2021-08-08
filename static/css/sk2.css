@@ -14,11 +14,11 @@ a {
 }
 
 .content-box {
-    background-color: rgb(250,255,255);
+    background-color: rgb(250,254,252);
     padding: 50px;
-    border: 1px solid black;
-    border-radius:20px;
-    width: 80%;
+    border: 1px solid grey;
+    width: 70%;
+    max-width: 800px;
     margin-bottom:50px;
     
 }
@@ -38,6 +38,7 @@ a:hover {
   flex-wrap: wrap;
   padding-bottom: 10px;
   padding-top: 10px;
+    margin-bottom:0px;
 }
 
 .no-dot {
@@ -53,12 +54,12 @@ header h3 {
 }
 
 .flex-right {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 10px;
   padding: 10px;
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 50px;
-  margin-bottom: -85px;
+  margin-bottom: -10;
   width: 80%;
   max-width: 880px;
   align-content: left;
@@ -79,8 +80,8 @@ header nav li {
 header,
 footer {
   margin-right: 10%;
-  margin-left: 8%;
-  margin-top: 8%;
+  margin-left: 10%;
+  margin-top: 3em;
   margin-bottom: 10%;
   display: block;
 }
@@ -91,6 +92,7 @@ footer {
   box-shadow: 0px 0px 10px grey;
   padding: 30px;
   margin-right: 55px;
+  margin-bottom: 55px;
   width: 350px;
   height: 350px;
   box-sizing: border-box;
@@ -106,7 +108,8 @@ footer {
 .card h3,
 .card p {
   color: white;
-  font-size:20px;
+  font-size:30px;
+  -webkit-text-stroke: 1px black;
   margin-block-end: 5px;
   margin-block-start: 5px;
 }
@@ -116,9 +119,9 @@ footer {
 }
 
 .card-date {
-  color: blue;
-  font-size:20px;
-  -webkit-text-stroke: .1px white;
+  color: white;
+  font-size:30px;
+  -webkit-text-stroke: 1px black;
   text-align: right;
     margin-top: 80%;
 }
