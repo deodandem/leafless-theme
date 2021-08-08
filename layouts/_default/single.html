@@ -1,13 +1,6 @@
 {{define "main"}}
 <div class="main">
 
-	<!--Title-->
-	{{with .Title}}
-	<heading>
-		<h1>{{.}}</h1>
-	</heading>
-	{{end}}
-
 	<!--TOC-->
 	{{if .Site.Params.toc}}
 	<div class="toc-box">
@@ -17,8 +10,10 @@
 	{{end}}
 
 	<!--Content-->
+    <div class="content-box">
 	{{with .Content}}<content>{{.}}</content>{{end}}
-
+    </div>
+    
 	<!--Date-->
 	{{with .Lastmod}}<div>Update: {{dateFormat "2006-01-02" .}}</div>{{end}}
 

@@ -30,13 +30,16 @@
 	<!--list-->
 	<section class="flex">
 		{{range $paginator.Pages}}
-		<div class="card">
-			<a href="{{.RelPermalink}}">
-				<h3>{{.Title}}</h3>
-			</a>
+		<a href="{{.RelPermalink}}">
+        <div class="card" style="background-image: url({{.Param "thumbnail"}})">
+			
+				<h3>{{.Title}}</h3>            
 			{{with .Lastmod}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
 			{{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}
+            {{if site.Params.file}}<img src="{{.File.Path}}" width=100px>{{end}}
 		</div>
+        </a>
+
 		{{end}}
 	</section>
 
