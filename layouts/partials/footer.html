@@ -1,5 +1,36 @@
 <footer class="footer">
+    
+    {{if site.Menus}}
+<nav class="footerbar">
+	{{$currentPage := .}}
+	{{range site.Menus.footer}}
+		{{if .HasChildren}}
+		<li class="{{if $currentPage.HasMenuCurrent "main" .}}active{{end}}">
+			<a href="#">
+				{{.Pre}}
+				<span>{{.Name}}</span>
+			</a>
+		</li>
+		<ul>
+			{{range .Children}}
+			<li class="{{if $currentPage.IsMenuCurrent "main" .}}active{{end}}">
+				<a href="{{.URL}}">{{.Name}}</a>
+			</li>
+			{{end}}
+		</ul>
+		{{else}}
+    <center>
+			<a href="{{.URL}}">
+				{{.Pre}}
+				<span style="font-variant: small-caps; color: black">{{.Name}}</span>
+			</a>
+        </center>
 
+		{{end}}
+	{{end}}
+{{end}}
+</nav>
+    
 	{{if site.Copyright}}
 		<div class="footer">{{site.Copyright}}
 	{{else}}
