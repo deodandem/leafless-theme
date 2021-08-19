@@ -16,7 +16,7 @@
         {{with .PublishDate}}{{dateFormat "Monday, 1/2/06 at 3:04 PM" .}}{{end}}<br>
         <!--LastMod-->
         {{if ne .Lastmod .PublishDate}}
-              Updated: {{with .Lastmod}}{{dateFormat "1/2/06 at 3:04 PM" .}}{{end}}
+              Updated: {{with .Lastmod}}{{dateFormat "1/2/06 at 3:04 PM" .}} {{end}}
         {{end}}</div>
 
         
