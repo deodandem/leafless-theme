@@ -15,26 +15,14 @@
 	{{end}}
 	{{end}}
 
-	<!--$paginator-->
-	{{$p := .Pages}}
-	{{if .IsHome}}
-	{{$p = where site.RegularPages "Type" "in" site.Params.mainSections}}
-	{{else if eq .Kind "taxonomy"}}
-	{{$p = $p.ByTitle}}
-	{{end}}
-	{{$paginator := .Paginate $p}}
-
-	<!--pagination-->
-	{{template "_internal/pagination.html" .}}
 
 	<!--list-->
 	<div class="flex">
-		{{range $paginator.Pages}}
+		{{range (.Paginator 20).Pages}}
 		<a href="{{.RelPermalink}}">
-        <div class="card" style="background-image: url({{.Param "thumbnail"}})">
-			
+        <div class="card" style="background-image: url({{.Param "thumbnail"}})">			
 				<h3>{{.Title}}</h3>            
-			{{with .Lastmod}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
+			{{with .PublishDate}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
 			{{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}
             {{if site.Params.file}}<img src="{{.File.Path}}" width=100px>{{end}}
 		</div>
@@ -42,6 +30,74 @@
 
 		{{end}}
 	</div>
+    
+    
+	<!--pagination-->
+
+ {{ if gt $.Paginator.TotalPages 1 }}
+<div class="pagination">
+  {{ $pag := .Paginator }}
+
+  {{ $adjacent_links := 1 }}
+  {{ $max_links := (add (mul $adjacent_links 2) 1) }}
+  {{ $lower_limit := (add $adjacent_links 1) }}
+  {{ $upper_limit := (sub $pag.TotalPages $adjacent_links) }}
+
+  {{ if $pag.HasPrev }}
+  <a href="{{ $pag.Prev.URL }}" aria-label="Previous" class="page-tag">←</a>
+  {{ end }}
+
+  <!-- First page (if current page is greater than allowed limit) -->
+  {{ if gt $pag.TotalPages $max_links }}
+    {{ if ge $pag.PageNumber $max_links }}
+    <a href="{{ $pag.First.URL }}" aria-label="First" class="page-tag">1</a>
+    <span>...</span>
+    {{ end }}
+  {{ end }}
+
+  <!-- Iterate the pager to show pages within ruleset -->
+  {{ range $pag.Pagers }}
+    {{ $.Scratch.Set "page_number_flag" false }}
+
+    <!-- Identify if the current page is within the ruleset to be shown (or not) -->
+    {{ if gt $pag.TotalPages $max_links }}
+      {{ if le $pag.PageNumber $lower_limit }}
+        {{ if le .PageNumber $max_links }}
+          {{ $.Scratch.Set "page_number_flag" true }}
+        {{ end }}
+      {{ else if ge $pag.PageNumber $upper_limit }}
+        {{ if gt .PageNumber (sub $pag.TotalPages $max_links) }}
+          {{ $.Scratch.Set "page_number_flag" true }}
+        {{ end }}
+      {{ else }}
+        {{ if and ( ge .PageNumber (sub $pag.PageNumber $adjacent_links) ) ( le .PageNumber (add $pag.PageNumber $adjacent_links) ) }}
+          {{ $.Scratch.Set "page_number_flag" true }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{ $.Scratch.Set "page_number_flag" true }}
+    {{ end }}
+
+    {{ if eq ($.Scratch.Get "page_number_flag") true }}
+    <a href="{{ .URL }}" aria-label="{{ .PageNumber }}" class="page-tag{{ if eq . $pag }} current{{ end }}">{{ .PageNumber }}</a>
+    {{ end }}
+  {{ end }}
+
+  <!-- Show the last page index -->
+  {{ if gt $pag.TotalPages $max_links }}
+    {{ if le $pag.PageNumber (sub $pag.TotalPages (sub $max_links 1)) }}
+    <span>...</span>
+    <a href="{{ $pag.Last.URL }}" aria-label="Last" class="page-tag">{{ $pag.TotalPages }}</a>
+    {{ end }}
+  {{ end }}
+
+  {{ if $pag.HasNext }}
+  <a href="{{ $pag.Next.URL }}" aria-label="Next" class="page-tag">→</a>
+  {{ end }}
+</div>
+{{ end }}
+    
+    
 
 </div>
 {{end}}

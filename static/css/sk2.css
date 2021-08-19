@@ -100,6 +100,22 @@ a:hover {
   align-items: center;
 }
 
+.pagination {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-left:40%;
+    margin-right: 40%;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.pagination a {
+    color: black;
+    font-size: 20px;
+}
+
+    
+}
 .no-dot {
   list-style-type: none;
 }
