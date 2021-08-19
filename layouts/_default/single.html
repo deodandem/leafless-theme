@@ -13,8 +13,11 @@
     <div class="content-box">
     <h1>{{.Title}}</h1>   
         <!--Date--><div class="subtitle">
-        {{with .Lastmod}}{{dateFormat "Monday, 1/2/06 at 3:04 PM" .}}{{end}}</div>
-    
+        {{with .PublishDate}}{{dateFormat "Monday, 1/2/06 at 3:04 PM" .}}{{end}}<br>
+        <!--LastMod-->
+        {{if ne .Lastmod .PublishDate}}
+              Updated: {{with .Lastmod}}{{dateFormat "1/2/06 at 3:04 PM" .}}{{end}}
+        {{end}}</div>
 
         
 	{{with .Content}}<content>{{.}}</content>{{end}}
