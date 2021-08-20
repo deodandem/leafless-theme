@@ -1,7 +1,8 @@
 <footer class="footer">
     
     {{if site.Menus}}
-<nav class="footerbar">
+
+        <nav class="footerbar">
 	{{$currentPage := .}}
 	{{range site.Menus.footer}}
 		{{if .HasChildren}}
@@ -25,11 +26,11 @@
 				<span style="font-variant: small-caps; color: black">{{.Name}}</span>
 			</a>
         </center>
-
 		{{end}}
 	{{end}}
 {{end}}
-</nav>
+         </nav>
+
     
 	{{if site.Copyright}}
 		<div class="footer">{{site.Copyright}}

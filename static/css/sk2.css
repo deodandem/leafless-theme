@@ -101,32 +101,23 @@ mark {
   background: rgb(255, 240, 140,.9);
 }
 
-body { 
+.poembox {
     position: relative;
-}
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background-color: rgba(0,0,0,0.5); /*dim the background*/
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    font-family: Times;
+    color: white;
+    font-size: 20px;
 }
 
-.modal {
-    width: 300px;
-    height: 200px;
-    line-height: 200px;
-    position: fixed;
-    top: 50%; 
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -150px;
-    background-color: #f1c40f;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 11; /* 1px higher than the overlay layer */
+html, body { 
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 a:visited {
@@ -148,6 +139,7 @@ a:hover {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 1em;
+  margin-bottom: 1em;
   justify-content: center;
   align-items: center;
 }
@@ -165,6 +157,48 @@ a:hover {
     color: black;
     font-size: 20px;
 }
+
+
+/* The sidebar menu */
+.leftnav {
+  height: 100%;
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 70%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  left: 3em;
+}
+
+/* The navigation menu links */
+.leftnav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  font-size: 50px;
+  display: block;
+}
+
+.rightnav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; 
+  top: 70%; /* Stay at the top */
+  right: 6em;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.rightnav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+}
+
+
 
     
 }
@@ -226,6 +260,20 @@ h4 {
   position: flex;
 }
 
+.poem-footer {
+  text-align: center;
+  font-size: 15px;
+  width: 30%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  margin-left: 35%;
+  margin-right: 50%;
+  margin-top: 10em;
+    padding-top: 1em;
+    padding-bottom:2em;
+    border-radius:10px;
+  
+}
+
 .footerbar {
   border: 1px dotted black;
   background-image: linear-gradient(to bottom right, red, yellow);
@@ -280,7 +328,8 @@ header,
 footer {
   margin: auto;
   margin-top: 2em;
-  width: 90%;
+  width: 100%;
+  position: relative
 }
 
 .card {
@@ -288,7 +337,8 @@ footer {
   border-radius: 10px;
   box-shadow: 0px 0px 10px grey;
   padding: 30px;
-  margin-right: 55px;
+  margin-left: 27px;
+  margin-right: 27px;
   margin-bottom: 55px;
   width: 350px;
   height: 350px;
@@ -337,6 +387,9 @@ footer {
 
 .footer {
   text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   color: black;
   padding-right: 5px;
   margin-bottom: 4em;

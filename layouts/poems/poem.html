@@ -1,0 +1,13 @@
+{{define "main"}}
+<html style="background-image: url({{.Param "thumbnail"}})">
+
+<body>  
+    <!--Content-->
+<div class="poembox">    
+    {{with .Content}}<content>{{.}}</content>{{end}}
+    </div>
+</body>
+    
+
+{{- partial "poem-footer.html" . -}}
+{{end}}
