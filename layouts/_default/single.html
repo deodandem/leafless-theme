@@ -23,10 +23,11 @@
 	{{with .Content}}<content>{{.}}</content>{{end}}
     
 	<!--Tag-->
-		<div class="pad-r-5px">Tags:</div>
-		{{range (.GetTerms "tags")}}
-		<div class="pad-r-5px"><a href="{{.RelPermalink}}">{{.LinkTitle}}</a></div>
-		{{end}}
+		<div class="pad-r-5px">Tags:
+            {{ range $i, $e := .Params.tags }}
+
+              <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
+                      {{ end }}
 	</div>
 
 	<!--Prev/Next-->

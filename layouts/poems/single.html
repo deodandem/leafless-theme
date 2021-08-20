@@ -1,14 +1,20 @@
 {{define "main"}}
-<html style="background-image: url({{.Param "thumbnail"}})">
-
+<html style="background-image: url({{.Param "thumbnail"}});   background-color: rgba(0,0,0,.1);
+  background-blend-mode: overlay;">
 <body>  
     <!--Content-->
+    
+<div class="homebutton">
+    <a href="/">Home</a><br><br>
+</div>
+    
 <div class="poembox">  
     {{with .Content}}<content>{{.}}</content>{{end}}
 </div>
 </body>
+
 </html>   
 {{- partial "poem-footer.html" . -}}
- 
+
 
 {{end}}
