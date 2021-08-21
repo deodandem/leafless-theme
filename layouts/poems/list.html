@@ -18,7 +18,7 @@
 
 	<!--list-->
 	<div class="flex">
-		{{range (.Paginator 20).Pages}}
+		{{range (.Paginator 15).Pages}}
         {{ if not .Params.hidden }}
 		<a href="{{.RelPermalink}}">
         <div class="card" style="background-image: url({{.Param "thumbnail"}})">			
