@@ -25,7 +25,6 @@
 	<!--Tag-->
 		<div class="pad-r-5px">Tags:
             {{ range $i, $e := .Params.tags }}
-
               <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
                       {{ end }}
 	</div>
