@@ -1,5 +1,10 @@
 {{define "main"}}
-<html style="background-image: url({{.Param "thumbnail"}}); background-color: rgba(0,0,0, 1);">
+
+{{if isset .Params "thumbnail"}}
+   <html style="background-image: url({{.Param "thumbnail"}})">
+{{ else }}
+   <html style="background-color: black">
+{{ end }}
 <body>  
     <!--Content-->
     
