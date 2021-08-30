@@ -48,6 +48,10 @@ img {
     margin-bottom: 20px;
 	  margin-top: 2em;
 }
+
+.indent {
+	margin-left: 2em;
+}
 a {
     text-decoration: none;
     transition: 0.3s ease-in-out;  
