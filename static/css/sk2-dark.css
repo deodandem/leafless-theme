@@ -1,13 +1,14 @@
 html {
   font-family: 'Helvetica Neue';
   font-size: 16px;
-  font-weight: 400;
+	color: white;
 }
 
 hr {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    width: 50%;
+    margin: 3em auto 3em;
+    width: 40%;
+	  height: 2px;
+    border: .5px solid white;
 }
 
 hr.between-updates {
@@ -33,7 +34,8 @@ hr.between-updates:after {
 }
 
 p {
-    margin-left: 3em;
+	  font-family: 'Baskerville';
+    margin-left: 4em;
     margin-right: 3em;
     line-height: 1.8em;
     
@@ -41,7 +43,7 @@ p {
 
 img {
     border-radius:8px;
-    box-shadow: 0px 0px 25px grey;
+	  max-width: 100%;
     display: flex;
     margin-left:auto;
     margin-right:auto;
@@ -52,14 +54,15 @@ img {
 .indent {
 	margin-left: 2em;
 }
+
 a {
     text-decoration: none;
     transition: 0.3s ease-in-out;  
-    color: green;
+    color: red;
 }
 
 blockquote {
-    margin-left: 5em;
+    margin-left: 8em;
     margin-right: 5em;
     text-align: justify;
     font-family: Times;
@@ -70,12 +73,14 @@ blockquote {
     margin-right: auto;
     font-size: 25px;
     text-align: center;
-    font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
+	  font-style: italic;
+	  font-family: 'Baskerville';
 }
 .caption {
     font-size: 14px;
+	  color: rgb(230,230,230);
     width: 90%;
     text-align: center;
     margin-left: auto;
@@ -85,6 +90,8 @@ blockquote {
 
 .caption-center {
     font-size: 15px;
+	  font-family: 'Baskerville';
+		color: rgb(230,230,230);
     width: 80%;
     text-align: center;
 		line-height: 1.5;
@@ -94,40 +101,24 @@ blockquote {
 }
 
 .dropcap {
-  font-family: 'Nunito';
+  font-family: 'Baskerville';
   font-weight: 100;
   float: left;
   font-size: 5em;
-  padding: 30px .2em 0.2em 0em;
+  padding: .3em .2em 0.2em 0em;
 }
 
 .subtitle {
+	  font-family: 'Baskerville';
+	  margin-left: 5px;
     text-align: center;
     padding-bottom: 1.5em;
     font-size: 25px;
     font-variant: small-caps;
 }
 .content-box {
-    background-color: rgb(252,254,252);
-    border: 1px solid grey;
-    width: 72%;
-    padding-top: 3em;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-bottom: 3em;
-    margin: auto;
-    
-}
-
-iframe {
-	width: 80%;
-	margin: 1em 4em 1em;
-	border: 2px solid grey;
-	border-radius: 20px;
-	box-shadow: 0px 0px 25px grey;
-}
-.content-box-black {
-    background-color: rgb(0,0,0);
+	  font-family: 'Helvetica Neue';
+    background-color: black;
     border: 1px solid grey;
     width: 80%;
     padding-top: 3em;
@@ -137,6 +128,7 @@ iframe {
     margin: auto;
     
 }
+
 
 mark {
   font-weight: bold;
@@ -177,7 +169,7 @@ html, body {
 		height: 100%;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0,0,0,.5)
+    background-color: black;
     position: relative;
 }
 
@@ -186,23 +178,25 @@ background: rgba(0, 0, 0, 0.5);
 }
 
 a:visited {
-    color:green;
+    color: rgb(240,240,240);
 }
 a:hover {
-    text-shadow: 0px 0px 10px red;
+    text-shadow: 0px 0px 1em white, 0px 0px .5em rgb(250,50,50);
 }
 .title {
     font-family: 'Helvetica Neue';
-    font-size: 90px;
-    text-align: center;
+	  font-weight: 200;
+    font-size: 80px;
+	  text-align: center;
     width: 90%;
     margin: auto;
     margin-top: 1em;
-	  
 }
 
 .flex {
   display: flex;
+	font-family: 'Baskerville';
+	font-weight: 200;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 1em;
@@ -275,10 +269,10 @@ a:hover {
 
 h1{
     text-align: center;
-    text-shadow: 0px 0px 5px grey;
-    font-weight: bold;
-    font-size: 80px;
-    font-variant: small-caps;
+    text-shadow: 0px 0px 10px grey;
+    font-family: 'Baskerville';
+	  font-weight: 100;
+    font-size: 60px;
     margin: 5px 0 20px 0px;
 }
 header a,
@@ -310,12 +304,12 @@ h4 {
 }
 
 .button a{
-    color: forestgreen;
+    color: white;
 }
 
 .menubar {
   font-family: 'Helvetica Neue';
-  font-weight: 400;
+  font-weight: 200;
   border: 1px solid rgb(150,150,150);
   border-radius: 15px;
   padding: 8px;
@@ -350,7 +344,7 @@ h4 {
 
 .poembutton a { 
   color: grey;
-  background-color: rgb(250,250,250);
+  background-color: rgb(80,80,100);
   border-radius: 10px;
   padding: 10px 15px 10px 15px;
 }
@@ -370,6 +364,7 @@ h4 {
   background-image: linear-gradient(to bottom right, red, yellow);
   border-radius: 15px;
   padding: 10px;
+	font-family: 'Helvetica Neue'
   font-size: 20px;
 	font-weight: 400;
   margin: auto;
@@ -396,12 +391,8 @@ header nav li {
   margin-left: 5px;
 }
 
-.subtitle {
-  margin-left: 5px;
-}
-
 ul, ol {
-    margin: 0 6em 0 2em;
+    margin-left: 2em;
     line-height: 1.7em;
 }
 
@@ -416,7 +407,7 @@ header,
 footer {
   margin: auto;
   margin-top: 2em;
-  width: 90%;
+  width: 80%;
   position: relative
 }
 
@@ -471,8 +462,9 @@ footer {
 }
 
 .pad-r-5px {
+	font-family: 'Baskerville';
   text-align: center;
-  color: black;
+  color: white;
   padding-right: 1em;
   margin-top: 5em;
     margin-bottom:2em;
@@ -480,19 +472,23 @@ footer {
 }
 
 .pad-r-5px a {
-    background-color: pink;
-    color: black;
+    color: rgb(240,240,240);
     padding: 4px;
-    border-radius: 5px;
+	  margin: 0 4px 0px 4px;
+	  border-style: solid;
+    border-radius: 6px;
     border-width: 1px;
+	  border-color: rgb(230,230,230);
     
 }
 .footer {
   text-align: center;
+	font-family: 'Helvetica Neue';
+	font-weight: 200;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: black;
+  color: rgb(200,200,200);
   padding-right: 5px;
   margin-top: 4em;
   padding-bottom: 4em;

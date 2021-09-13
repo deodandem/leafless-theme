@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
-{{- partial "head.html" . -}}
+{{- partial "darkhead.html" . -}}
 
 <body>
-	{{- partial "header.html" . -}}
+	{{- partial "darkheader.html" . -}}
 
-    <div class="main">    
-         <!--Content-->
-        <div class="content-box">
-        {{with .Content}}<content>{{.}}</content>{{end}}
-        </div>
+    <div class="main">  
+			<!--Content-->
+    <div class="content-box">
+    <h1>{{.Title}}</h1>   
+        <!--Date--><div class="subtitle">
+        {{with .PublishDate}}{{dateFormat "Monday, 1/2/06 at 3:04 PM" .}}{{end}}<br>
+        <!--LastMod-->
+        {{if ne .Lastmod .PublishDate}}
+              Updated: {{with .Lastmod}}{{dateFormat "1/2/06 at 3:04 PM" .}} {{end}}
+        {{end}}
+			</div>
+
+			<div>
+	   {{with .Content}}<content>{{.}} </content>{{end}}
+
+				<!--Tag-->
+		<div class="pad-r-5px">Tags:
+            {{ range $i, $e := .Params.tags }}
+              <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
+                      {{ end }}</div>
+	<!--Prev/Next-->
+	{{if or .PrevInSection .NextInSection}}
+	<div class="flex">
+		{{with .PrevInSection}}<a href="{{.RelPermalink}}">
+			<< {{.Title}}</a> {{end}}
+				{{with .NextInSection}}<a class="flex-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
+	</div>
+	{{end}}
     </div>
-	{{- partial "footer.html" . -}}
+	</div>
+			
+	{{- partial "darkfooter.html" . -}}
+			
 </body>
 
 
