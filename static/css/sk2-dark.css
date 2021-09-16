@@ -513,6 +513,12 @@ table, th, td {
 
 /* toc */
 
+.toc {
+  font-size: 20px;
+  font-variant: small-caps;
+  line-height: 1.5em;
+}
+
 .toc-box {
   border: 1px solid black;
   padding: 5px;
