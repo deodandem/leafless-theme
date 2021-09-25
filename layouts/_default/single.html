@@ -23,7 +23,7 @@
 	{{with .Content}}<content>{{.}}</content>{{end}}
     
 	<!--Tag-->
-		<div class="pad-r-5px">Tags:
+		<div class="tags">Tags:
             {{ range $i, $e := .Params.tags }}
               <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
                       {{ end }}

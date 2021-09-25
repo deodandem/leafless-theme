@@ -105,7 +105,7 @@ blockquote {
   font-weight: 100;
   float: left;
   font-size: 5em;
-  padding: .3em .2em 0.2em 0em;
+  padding: .32em .15em 0.2em 0em;
 }
 
 .subtitle {
@@ -540,4 +540,59 @@ toc ul {
 toc ul ul {
   margin-left: 0px;
   padding-left: 15px;
+}
+
+
+/* TOOLTIPS */
+
+.tooltip {
+  text-decoration:none;
+  position:relative;
+  cursor: crosshair;
+  word-wrap: break-word;
+}
+.tooltip span {
+  display:none;
+}
+.tooltip:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+  background:black;
+  max-width: 500px;
+  padding: 10px;
+  font-family: 'Baskerville';
+  opacity: 70%;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 1.5em;
+  border-radius: 5px;
+  color: white;
+  border-color: rgb(200,200,200);
+  border-style:solid;
+  border-width:1px;
+  z-index: 2;
+}
+
+.tooltip-i {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip-i span {
+  display:none;
+}
+
+.tooltip-i:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+  background:rgb(0, 0, 0, .7);
+  max-width: 200px;
+  padding: 10px;
+  font-size: 90%;
+  line-height: 1em;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: red;
+  color: white;
 }
