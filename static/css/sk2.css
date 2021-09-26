@@ -73,7 +73,7 @@ blockquote {
   font-weight: 400;
   background: rgb(240,240,240);
   border-radius: 10px;
-  padding: 40px 0px 40px 50px;
+  padding: 40px 40px 40px 50px;
   text-align: left;
 
 }
@@ -431,6 +431,22 @@ ul ul {
     list-style-type: none;
 }
 
+ul.dashed {
+  font-size: 14px;
+  margin-left: 0;
+  margin-right: 0em;
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+ul.dashed > li:before {
+  content: "– ";
+  font-weight: 800;
+  text-indent: -5px;
+}
 
 .main,
 header,
