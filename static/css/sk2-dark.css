@@ -86,7 +86,7 @@ blockquote {
 .mono-dark {
   font-family: 'IBM Plex Mono';
   color: rgb(150,150,150);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   background: rgb(40,40,40);
   border-radius: 10px;
