@@ -55,6 +55,8 @@ img {
 	margin-left: 2em;
 }
 
+
+
 a {
     text-decoration: none;
     transition: 0.3s ease-in-out;  
@@ -62,12 +64,52 @@ a {
 }
 
 blockquote {
-    width: 70%;
-	  margin-left: 8em;
+    width: 65%;
+    margin: 2em auto 2em 8em;
     text-align: justify;
     font-family: Times;
     line-height: 1.7em;
 }
+
+.mono {
+  font-family: 'IBM Plex Mono';
+  color: rgb(80,80,80);
+  font-size: 15px;
+  font-weight: 400;
+  background: rgb(240,240,240);
+  border-radius: 10px;
+  padding: 40px 40px 40px 50px;
+  text-align: left;
+
+}
+
+.mono-dark {
+  font-family: 'IBM Plex Mono';
+  color: rgb(150,150,150);
+  font-size: 15px;
+  font-weight: 400;
+  background: rgb(40,40,40);
+  border-radius: 10px;
+  padding: 40px 40px 40px 50px;
+  text-align: left;
+  max-height: 500px;
+  overflow-y: auto;
+
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 .blurb {
     margin-left: auto
     margin-right: auto;
@@ -559,16 +601,16 @@ toc ul ul {
   position:fixed;
   overflow:hidden;
   background:black;
-  max-width: 500px;
+  max-width: 300px;
   padding: 10px;
-  font-family: 'Baskerville';
-  opacity: 70%;
-  font-size: 25px;
+  font-family: 'IBM Plex Mono';
   font-style: italic;
+  opacity: 70%;
+  font-size: 12px;
   line-height: 1.5em;
   border-radius: 5px;
   color: white;
-  border-color: rgb(200,200,200);
+  border-color: rgb(50,50,50);
   border-style:solid;
   border-width:1px;
   z-index: 2;
