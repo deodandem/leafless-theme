@@ -1,5 +1,5 @@
 html {
-  font-family: 'Helvetica Neue';
+  font-family: 'Baskerville';
   font-size: 16px;
 	color: white;
 }
@@ -65,10 +65,11 @@ a {
 
 blockquote {
     width: 65%;
-    margin: 2em auto 2em 6vw;
+    margin: 2em auto 2em 6em;
     text-align: justify;
     font-family: Times;
     line-height: 1.7em;
+    font-size: 14px;
 }
 
 .mono {
@@ -97,6 +98,13 @@ blockquote {
 
 }
 
+.response {
+  text-align: right;
+  font-style: italic;
+  margin: 3em auto 3em auto;
+  font-size: 20px;
+}
+
 body::-webkit-scrollbar {
   width: 1em;
 }
@@ -121,7 +129,8 @@ body::-webkit-scrollbar-thumb {
 	  font-family: 'Baskerville';
 }
 .caption {
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Baskerville';
 	  color: rgb(230,230,230);
     width: 90%;
     text-align: center;
@@ -159,7 +168,7 @@ body::-webkit-scrollbar-thumb {
     font-variant: small-caps;
 }
 .content-box {
-	  font-family: 'Helvetica Neue';
+	  font-family: 'Baskerville';
     background-color: black;
     border: 1px solid grey;
     width: 80%;
@@ -173,7 +182,6 @@ body::-webkit-scrollbar-thumb {
 
 
 mark {
-  font-weight: bold;
   padding-left:3px;
   padding-right:3px;
   padding-top: 1px;
