@@ -72,6 +72,12 @@ blockquote {
     font-size: 14px;
 }
 
+.t {
+  font-family: 'Times';
+  font-size: 18px;
+  margin: 0em 4em 1em 2em;
+  line-height: 1.7em
+}
 .mono {
   font-family: 'IBM Plex Mono';
   color: rgb(80,80,80);
