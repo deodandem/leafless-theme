@@ -8,9 +8,10 @@ html {
 }
 
 @media only screen and (max-device-width: 2000px) {
-  background: no-repeat center center fixed;
-  height: 100%;
-  overflow: hidden;
+  html {
+    background-size: cover;
+    background-attachment: scroll;
+  }
 }
 
 hr {
@@ -69,8 +70,8 @@ a {
 }
 
 blockquote {
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 7em;
+    margin-right: 6em;
     text-align: justify;
     font-family: Times;
     line-height: 1.7em;
@@ -82,7 +83,7 @@ center {
 .mono {
   font-family: 'IBM Plex Mono';
   color: rgb(80,80,80);
-  font-size: 14px;
+  font-size: .7em;
   font-weight: 400;
   background: rgb(240,240,240);
   border-radius: 10px;
@@ -593,7 +594,7 @@ ul ul {
 }
 
 ul.dashed {
-  font-size: 14px;
+  font-size: .9em;
   margin-left: 0;
   margin-right: 0em;
   list-style-type: none;
