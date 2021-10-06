@@ -658,10 +658,10 @@ footer {
 
 .tags {
   text-align: center;
-  font-size: 15px;
+  font-size: .8em;
   font-weight: 300;
   color: black;
-  width: fit-content;
+  width: 50%;
   margin: 4em auto 4em auto;
   line-height: 2.5em;
 }
@@ -675,11 +675,13 @@ footer {
     
 }
 .nav-left {
+  font-size: .9em;
   display: inline-block;
   align-content: left;
   float: left;
 }
 .nav-right {
+  font-size: .9em;
   display: inline-block;
   width: fit-content;
   float: right;

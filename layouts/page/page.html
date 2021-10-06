@@ -20,21 +20,22 @@
 			<div>
 	   {{with .Content}}<content>{{.}} </content>{{end}}
 
-				<!--Tag-->
-		<div class="pad-r-5px">Tags:
-            {{ range $i, $e := .Params.tags }}
-              <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
-                      {{ end }}</div>
-	<!--Prev/Next-->
-	{{if or .PrevInSection .NextInSection}}
-	<div class="flex">
-		{{with .NextInSection}}<a href="{{.RelPermalink}}">
-			<< {{.Title}}</a> {{end}}
-				{{with .PrevInSection}}<a class="flex-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
-	</div>
-	{{end}}
-    </div>
-	</div>
+	<!--Tag-->
+	<div class="tags">Tags:
+		{{ range $i, $e := .Params.tags }}
+		  <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
+				  {{ end }}
+</div>
+
+<!--Prev/Next-->
+<div class="nav-left">
+{{if or .PrevInSection .NextInSection}}
+	{{with .NextInSection}}<a href="{{.RelPermalink}}">
+		<< {{.Title}}</a> {{end}}</div>
+		<div class="nav-right"></div>
+			{{with .PrevInSection}}<a class="nav-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
+		</div></div>
+{{end}}
 			
 	{{- partial "darkfooter.html" . -}}
 			

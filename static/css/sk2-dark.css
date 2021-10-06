@@ -571,12 +571,42 @@ table, th, td {
   padding: 5px;
 }
 
-.tags-list {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Helvetica Neue';
-    margin-bottom: 1em;
+
+.tags {
+  font-family: 'Helvetica Neue';
+  text-align: center;
+  font-size: .8em;
+  font-weight: 300;
+  color: rgb(230,230,230);
+  width: 60%;
+  margin: 4em auto 4em auto;
+  line-height: 2.5em;
 }
+
+.tags a {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid grey 1px;
+    
+}
+
+.nav-left {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: .9em;
+  display: inline-block;
+  align-content: left;
+  float: left;
+}
+.nav-right {
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: .9em;
+  display: inline-block;
+  width: fit-content;
+  float: right;
+}
+
 
 /* toc */
 
