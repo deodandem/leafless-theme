@@ -1,10 +1,7 @@
 {{define "main"}}
 
-{{if isset .Params "thumbnail"}}
-   <html style="background: url({{.Param "bg"}}) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   background-size: cover;
-   ">
+{{if isset .Params "bg"}}
+   <html style="background-image: url({{.Param "bg"}})">
 {{ else }}
    <html style="background-color: black">
 {{ end }}
