@@ -1,7 +1,7 @@
 html {
   font-family: 'Helvetica Neue';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 hr {
@@ -35,7 +35,8 @@ hr.between-updates:after {
 p {
     margin-left: 3em;
     margin-right: 3em;
-    line-height: 1.8em;
+    line-height: 1.7em;
+    font-family: 'Times'
     
 }
 
@@ -59,13 +60,16 @@ a {
 }
 
 blockquote {
-    margin-left: 6vw;
+    margin-left: 5em;
     margin-right: 5em;
     text-align: justify;
     font-family: Times;
     line-height: 1.7em;
 }
 
+center {
+  font-family: 'Times';
+}
 .mono {
   font-family: 'IBM Plex Mono';
   color: rgb(80,80,80);
@@ -88,7 +92,7 @@ blockquote {
   border-radius: 10px;
   padding: 30px 40px 30px 50px;
   text-align: left;
-  margin: .5em auto 6em .5em;
+  margin: .5em auto 6em 3em;
   width: fit-content;
 }
 
@@ -108,16 +112,32 @@ blockquote {
 
 .mono-white {
   font-family: 'Times';
-  color: rgb(230,230,230);
+  color: rgb(200,200,200);
   font-size: 14px;
   font-weight: 400;
-  background: rgb(250,250,250, .2);
+  background: rgb(250,250,250, .1);
   border-radius: 10px;
   padding: 30px 40px 30px 50px;
   text-align: left;
   margin: .5em 0em 50em 25%;
   width: fit-content;
-  max-width: 350px;
+}
+
+.glow {
+  -webkit-border-radius: 60px;
+  border-radius: 5px;
+  border: none;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  {
+    box-shadow: 0 0 15px green;
+}
+to {
+      box-shadow:  0 0 80px green;
+}
 }
 
 
@@ -137,9 +157,26 @@ blockquote {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
+
+.summary {
+  margin-left: auto
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Times';
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
 .caption {
+    font-weight: 400;
     font-size: 14px;
     width: 90%;
+    line-height: 1.7em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -147,21 +184,22 @@ blockquote {
 }
 
 .caption-center {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
     width: 80%;
     text-align: center;
-		line-height: 1.5;
+		line-height: 1.7em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:2em;
 }
 
 .dropcap {
-  font-family: 'Nunito';
+  font-family: 'Times';
   font-weight: 100;
   float: left;
   font-size: 5em;
-  padding: 30px .2em 0.2em 0em;
+  padding: 25px 15px 5px 5px;
 }
 
 .dropcap-t {
@@ -192,9 +230,9 @@ blockquote {
 }
 
 iframe {
-	width: 80%;
-	margin: 1em 4em 1em;
-	border: 2px solid grey;
+	width: 85%;
+	margin: 1em auto 1em 2em;
+	border: 1px solid white;
 	border-radius: 20px;
 	box-shadow: 0px 0px 25px grey;
 }
@@ -211,7 +249,6 @@ iframe {
 }
 
 mark {
-  font-weight: bold;
   padding-left:3px;
   padding-right:3px;
   padding-top: 1px;
@@ -289,16 +326,6 @@ a:hover {
 	  
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  justify-content: center;
-  align-items: center;
-}
-
 .pagination {
     text-align: center;
     letter-spacing: 5px;
@@ -311,10 +338,6 @@ a:hover {
 .pagination a {
     color: black;
     font-size: 20px;
-}
-
-p {
-  line-height: 1.7em;
 }
 
 .comment {
@@ -333,6 +356,10 @@ p {
   line-height: 1.7em
 }
 
+.h {
+  font-family: 'Helvetica Neue'; font-weight: 400
+  }
+
 /* The sidebar menu */
 .leftnav {
   height: 100%;
@@ -343,6 +370,27 @@ p {
   padding-top: 20px;
   left: 3em;
 }
+
+.largeleftnav {
+  height: 100%;
+  width: fit-content; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 85%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  left: 5em;
+}
+
+.largeleftnav a {
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+  font-family: "Baskerville";
+  color: grey;
+  font-size: 20px;
+  border-radius: 15px;
+  display: block;
+}
+
 
 /* The navigation menu links */
 .leftnav a {
@@ -362,6 +410,27 @@ p {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
+
+.largerightnav {
+  height: 100%;
+  width: fit-content; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 85%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  right: 5em;
+}
+
+.largerightnav a {
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+  font-family: "Baskerville";
+  color: grey;
+  font-size: 20px;
+  border-radius: 15px;
+  display: block;
+}
+
 
 /* The navigation menu links */
 .rightnav a {
@@ -383,6 +452,10 @@ h1{
     font-size: 80px;
     font-variant: small-caps;
     margin: 5px 0 20px 0px;
+}
+
+h2{
+  text-align: center;
 }
 header a,
 header h2,
@@ -414,6 +487,7 @@ h4 {
 
 .button a{
     color: forestgreen;
+    font-family: 'Helvetica Neue';
 }
 
 .menubar {
@@ -480,16 +554,12 @@ h4 {
   width: 4em;
   align-content: left;
   position: flex;
-  
 }
 
 .table tr, td{
 	font-size: 12px;
 }
-.flex-right {
-  margin-left: 60%;
-  align-content: right;
-}
+
 
 .pagination li,
 header nav li {
@@ -502,11 +572,13 @@ header nav li {
 }
 
 ul, ol {
+  font-family: 'Times';
     margin: 0 6em 0 2em;
     line-height: 1.7em;
 }
 
 ul ul {
+  font-family: 'Times';
     margin-left: -2em;
     list-style-type: none;
 }
@@ -586,20 +658,47 @@ footer {
 
 .tags {
   text-align: center;
+  font-size: 15px;
+  font-weight: 300;
   color: black;
-  width: 80%;
-  margin: 3em 5em 3em auto;
+  width: fit-content;
+  margin: 4em auto 4em auto;
   line-height: 2.5em;
 }
 
 .tags a {
     background-color: pink;
     color: black;
-    padding: 4px;
+    padding: 5px;
     border-radius: 5px;
     border-width: 1px;
     
 }
+.nav-left {
+  display: inline-block;
+  align-content: left;
+  float: left;
+}
+.nav-right {
+  display: inline-block;
+  width: fit-content;
+  float: right;
+}
+
+
+.flex {
+  display: flex;
+	font-family: 'Helvetica Neue';
+	font-weight: 300;
+  flex-wrap: wrap;
+  margin-left: 0;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   text-align: center;
   width: 100%;
@@ -631,6 +730,7 @@ table, th, td {
 /* toc */
 
 .toc {
+  font-weight: 400;
   font-size: 20px;
   font-variant: small-caps;
   line-height: 1.5em;
@@ -732,4 +832,13 @@ toc ul ul {
     border-radius: 10px;
   }
   
+  h1{
+    font-size: 50px;
+  }
+  .subtitle {
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 20px;
+    font-variant: small-caps;
+  }
 }

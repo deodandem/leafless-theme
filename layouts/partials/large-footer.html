@@ -1,0 +1,9 @@
+<footer class="footer">
+    <!--Prev/Next-->
+	{{if or .PrevInSection .NextInSection}}
+	<div class="largerightnav">
+		{{with .PrevInSection}}<a href="{{.RelPermalink}}">
+			 {{.Title}} →</a> {{end}}</div>
+				{{with .NextInSection}}<div class="largeleftnav"><a href="{{.RelPermalink}}">← {{.Title}}</a>{{end}}</div>
+    {{end}}
+</footer>

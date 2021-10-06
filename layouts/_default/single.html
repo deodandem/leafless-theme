@@ -30,12 +30,13 @@
 	</div>
 
 	<!--Prev/Next-->
+	<div class="nav-left">
 	{{if or .PrevInSection .NextInSection}}
-	<div class="flex">
-		{{with .PrevInSection}}<a href="{{.RelPermalink}}">
-			<< {{.Title}}</a> {{end}}
-				{{with .NextInSection}}<a class="flex-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
-	</div>
+		{{with .NextInSection}}<a href="{{.RelPermalink}}">
+			<< {{.Title}}</a> {{end}}</div>
+			<div class="nav-right"></div>
+				{{with .PrevInSection}}<a class="nav-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
+			</div></div>
 	{{end}}
 
 	<!--Related

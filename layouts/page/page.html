@@ -28,9 +28,9 @@
 	<!--Prev/Next-->
 	{{if or .PrevInSection .NextInSection}}
 	<div class="flex">
-		{{with .PrevInSection}}<a href="{{.RelPermalink}}">
+		{{with .NextInSection}}<a href="{{.RelPermalink}}">
 			<< {{.Title}}</a> {{end}}
-				{{with .NextInSection}}<a class="flex-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
+				{{with .PrevInSection}}<a class="flex-right" href="{{.RelPermalink}}">{{.Title}} >></a>{{end}}
 	</div>
 	{{end}}
     </div>
