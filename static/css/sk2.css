@@ -7,10 +7,10 @@ html {
   background-size: cover;
 }
 
-@media only screen and (max-device-width: 2000px) {
+
+@media only screen and (max-device-width: 1024px) {
   html {
-    background-size: cover;
-    background-attachment: scroll;
+   background-attachment: initial;
   }
 }
 
