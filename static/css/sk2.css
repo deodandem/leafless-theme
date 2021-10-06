@@ -7,8 +7,10 @@ html {
   background-size: cover;
 }
 
-@media only screen and (max-device-width: 1024px) {
-  background-attachment: scroll;
+@media only screen and (max-device-width: 2000px) {
+  background: no-repeat center center fixed;
+  height: 100%;
+  overflow: hidden;
 }
 
 hr {
