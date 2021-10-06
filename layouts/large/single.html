@@ -2,7 +2,7 @@
 
 {{if isset .Params "thumbnail"}}
    <html style="background: url({{.Param "bg"}}); 
-   background-size: 100% 100%; background-repeat: none;">
+   background-position: center center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-color: black;">
 {{ else }}
    <html style="background-color: black">
 {{ end }}

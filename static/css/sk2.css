@@ -78,18 +78,53 @@ blockquote {
 
 }
 
+
 .mono-trans {
   font-family: 'IBM Plex Mono';
   color: rgb(80,80,80);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  background: rgb(240,240,240, .8);
+  background: rgb(240,240,240, .6);
   border-radius: 10px;
   padding: 30px 40px 30px 50px;
   text-align: left;
   margin: .5em auto 6em .5em;
   width: fit-content;
+}
 
+.mono-black {
+  font-family: 'Baskerville';
+  color: rgb(210,210,210);
+  font-size: 14px;
+  font-weight: 400;
+  background: rgb(0,0,0, .7);
+  border-radius: 10px;
+  padding: 30px 40px 30px 50px;
+  text-align: left;
+  margin: .5em 0em 50em 15em;
+  width: fit-content;
+  max-width: 350px;
+}
+
+.mono-white {
+  font-family: 'Times';
+  color: rgb(230,230,230);
+  font-size: 14px;
+  font-weight: 400;
+  background: rgb(250,250,250, .2);
+  border-radius: 10px;
+  padding: 30px 40px 30px 50px;
+  text-align: left;
+  margin: .5em 0em 50em 25%;
+  width: fit-content;
+  max-width: 350px;
+}
+
+
+@media (max-width: 800px) {
+  .mono-trans {
+    font-size: 10px;
+  } 
 }
 
 
@@ -146,7 +181,8 @@ blockquote {
 .content-box {
     background-color: rgb(252,254,252);
     border: 1px solid grey;
-    width: 72%;
+    width: 70%;
+    max-width: 850px;
     padding-top: 3em;
     padding-left: 4em;
     padding-right: 4em;
@@ -194,10 +230,11 @@ mark {
   top: 20%;
   width: 100%;
   margin: 0 auto 5em auto;
+  padding-left: 20px;
   padding-bottom: 5em;
   font-family: Times;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.7em;
 }
 
@@ -280,6 +317,15 @@ p {
   line-height: 1.7em;
 }
 
+.comment {
+  font-family: "Baskerville";
+  font-style: italic;
+  font-size: 80px;
+  line-height: 1.2em;
+  width: 300px;
+  margin: 1em auto 4em auto;
+}
+
 .t {
   font-family: 'Times';
   font-size: 18px;
@@ -326,10 +372,6 @@ p {
   display: block;
 }
 
-
-
-    
-}
 .no-dot {
   list-style-type: none;
 }
@@ -387,10 +429,9 @@ h4 {
   width: 5em;
   max-width: 1140px;
   align-content: left;
+  vertical-align: middle;
   position: flex;
 }
-
-
 
 .homebutton { 
   font-size: 20px; 
@@ -454,7 +495,6 @@ h4 {
 header nav li {
   list-style-type: none;
   display: inline-block;
-  margin-left: 5px;
 }
 
 .subtitle {
@@ -670,4 +710,26 @@ toc ul ul {
   border-style: solid;
   border-color: red;
   color: white;
+}
+
+@media (max-width: 900px ) {
+  .title {
+    font-size: 8vw;
+    padding-top: .7em;
+  }
+
+  header nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .menubar a {
+    font-size: 16px;
+  }
+
+  .menubar {
+    padding: 0;
+    border-radius: 10px;
+  }
+  
 }
