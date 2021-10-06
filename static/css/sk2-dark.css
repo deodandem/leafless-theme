@@ -76,7 +76,7 @@ blockquote {
 
 .t {
   font-family: 'Times';
-  font-size: 18px;
+  font-size: 1.2em;
   margin: 0em 4em 1em 2em;
   line-height: 1.7em
 }
@@ -89,12 +89,12 @@ blockquote {
 .mono {
   font-family: 'IBM Plex Mono';
   color: rgb(80,80,80);
-  font-size: 15px;
+  font-size: .75em;
   font-weight: 400;
   background: rgb(240,240,240);
   border: none;
   border-radius: 10px;
-  padding: 40px 40px 40px 50px;
+  padding: .5em .5em .5em .5em;
   text-align: left;
 
 }
@@ -107,7 +107,7 @@ blockquote {
   background: rgb(40,40,40);
   border-radius: 10px;
   border: none;
-  padding: 40px 40px 40px 50px;
+  padding: 3em 3em 3em 6em;
   text-align: left;
   max-height: 500px;
   overflow-y: auto;

@@ -10,7 +10,7 @@ html {
 
 @media only screen and (max-device-width: 1024px) {
   html {
-   background-attachment: initial;
+   background-position: scroll !important;
   }
 }
 
@@ -353,15 +353,15 @@ a:hover {
 .comment {
   font-family: "Baskerville";
   font-style: italic;
-  font-size: 80px;
+  font-size: 5em;
   line-height: 1.2em;
-  width: 300px;
+  width: 4em;
   margin: 1em auto 4em auto;
 }
 
 .t {
   font-family: 'Times';
-  font-size: 18px;
+  font-size: 1.2em;
   margin: 0em 4em 1em 2em;
   line-height: 1.7em
 }
