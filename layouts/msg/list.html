@@ -1,28 +1,15 @@
 {{define "main"}}
 <div class="main">
 
-	<!--_index.md-->
-	{{if not .IsHome}}
-	{{with .Title}}
-	<div>
-		<heading>{{.}}</heading>
-	</div>
-	{{end}}
-	{{with .Content}}
-	<div>
-		<article>{{.}}</article>
-	</div>
-	{{end}}
-	{{end}}
-
+  <div class="title-black"><a href="/">APL</a></div>
 
 	<!--list-->
 	<div class="flex">
-		{{range (.Paginator 15).Pages}}
-        {{ if not .Params.hidden }}
-		<a href="{{.RelPermalink}}">
-        <div class="card" style="background-image: url({{.Param "thumbnail"}})">			
-				<h3>{{.Title}}</h3>            
+		{{range (.Paginator 50).Pages.Reverse}}
+        {{ if not .Params.hide }}
+					<a href="{{.RelPermalink}}">
+        	<div class="card" style="background-image: url({{.Param "thumbnail"}})">			
+					<h3>{{.Title}}</h3>            
 			{{with .PublishDate}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
 			{{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}
             {{if site.Params.file}}<img src="{{.File.Path}}" width=100px>{{end}}

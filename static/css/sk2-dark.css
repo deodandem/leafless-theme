@@ -34,7 +34,8 @@ hr.between-updates:after {
 }
 
 p {
-	  font-family: 'Baskerville';
+	  font-family: 'Cardo';
+    font-size: 1.1em;
     margin-left: 4em;
     margin-right: 4em;
     line-height: 1.8em;
@@ -99,6 +100,20 @@ blockquote {
 
 }
 
+blockquote::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;               /* width of the entire scrollbar */
+}
+
+blockquote::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+blockquote::-webkit-scrollbar-thumb {
+  background-color: rgb(50,50,50);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 .mono-dark {
   font-family: 'IBM Plex Mono';
   color: rgb(150,150,150);
@@ -107,17 +122,23 @@ blockquote {
   background: rgb(40,40,40);
   border-radius: 10px;
   border: none;
-  padding: 3em 3em 3em 6em;
+  margin-left: 20%;
+  padding: 2em 2em 2em 2em;
+  width: 30vw;
   text-align: left;
-  max-height: 500px;
+  max-height: 40em;
   overflow-y: auto;
+  overflow-x: hidden;
 
 }
 
 .response {
   text-align: right;
   font-style: italic;
-  margin: 3em auto 3em auto;
+  margin-left: 5vw;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-right: 5em;
   font-size: 20px;
 }
 
@@ -132,35 +153,26 @@ blockquote {
 	  font-style: italic;
 	  font-family: 'Baskerville';
 }
+
 .caption {
-    font-size: 15px;
-    font-family: 'Baskerville';
-	  color: rgb(230,230,230);
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:2em;
+  font-size: .95em;
+  font-family: 'Baskerville';
+  color: rgb(230,230,230);
+  width: 35em;
+  line-height: 1.6em;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  margin: 1em auto 1em auto;
 }
 
-.caption-center {
-    font-size: 15px;
-	  font-family: 'Baskerville';
-		color: rgb(230,230,230);
-    width: 80%;
-    text-align: center;
-		line-height: 1.5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:2em;
-}
 
 .dropcap {
-  font-family: 'Baskerville';
-  font-weight: 100;
+  font-family: 'Cardo';
   float: left;
-  font-size: 5em;
-  padding: .32em .15em 0.2em 0em;
+  font-size:5.3em;
+  padding: .35em .15em 0.1em 0em;
 }
 
 .subtitle {
@@ -326,7 +338,7 @@ h1{
     text-align: center;
     text-shadow: 0px 0px 10px grey;
     font-family: 'Baskerville';
-	  font-weight: 100;
+	  font-weight: 400;
     font-size: 60px;
     margin: 5px 0 20px 0px;
 }
@@ -560,11 +572,6 @@ footer {
   padding-bottom: 4em;
 }
 
-div .scroll-wrapper {
-	overflow-x: scroll;
-	
-	
-}
 
 table, th, td {
   border: 1px solid black;
@@ -575,7 +582,7 @@ table, th, td {
 .tags {
   font-family: 'Helvetica Neue';
   text-align: center;
-  font-size: .8em;
+  font-size: .95em;
   font-weight: 300;
   color: rgb(230,230,230);
   width: 60%;
@@ -584,16 +591,18 @@ table, th, td {
 }
 
 .tags a {
+  font-size: .95em;
     padding: 5px;
     border-radius: 5px;
     border: solid grey 1px;
+    color: white;
     
 }
 
 .nav-left {
   font-family: 'Helvetica Neue';
   font-weight: 300;
-  font-size: .9em;
+  font-size: .95em;
   display: inline-block;
   align-content: left;
   float: left;
@@ -601,7 +610,7 @@ table, th, td {
 .nav-right {
   font-family: 'Helvetica Neue';
   font-weight: 300;
-  font-size: .9em;
+  font-size: .95em;
   display: inline-block;
   width: fit-content;
   float: right;
