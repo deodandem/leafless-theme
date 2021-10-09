@@ -1,7 +1,7 @@
 {{define "main"}}
 
-{{if isset .Params "thumbnail"}}
-   <html style="background-image: url({{.Param "thumbnail"}})">
+{{if isset .Params "bg"}}
+   <html style="background-image: url({{.Param "bg"}})">
 {{ else }}
    <html style="background-color: black">
 {{ end }}
