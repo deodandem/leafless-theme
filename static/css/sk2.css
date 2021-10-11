@@ -10,14 +10,18 @@ html {
 @media only screen and (max-device-width: 1366px) {
   html {
     background-position: top center;
-    background-size: 500vw auto;
+    background-attachment: fixed;
+    -webkit-background-size: 50vw auto;
+    background-size: 50vw auto;
   }
 }
 
 @media only screen and (max-device-width: 500px) {
   html {
     background-position: top center;
-    background-size: 300vw auto;
+    -webkit-background-size: 50vw auto;
+    background-size: 50vw auto;
+    background-attachment: fixed;
   }
 }
 
