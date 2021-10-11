@@ -8,9 +8,10 @@ html {
 }
 
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1366px) {
   html {
-    background-attachment: scroll;
+    background-position: top center;
+    background-size: 100vw auto;
   }
 }
 
