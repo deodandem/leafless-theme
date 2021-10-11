@@ -7,11 +7,17 @@ html {
   background-size: cover;
 }
 
-
 @media only screen and (max-device-width: 1366px) {
   html {
     background-position: top center;
-    background-size: auto 100vh;
+    background-size: 500vw auto;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  html {
+    background-position: top center;
+    background-size: 300vw auto;
   }
 }
 
