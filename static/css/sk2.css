@@ -2,15 +2,14 @@ html {
   font-family: 'Helvetica Neue';
   font-size: 16px;
   font-weight: 350;
-  background:  center center fixed;
+  background:  top center fixed;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
 @media only screen and (max-device-width: 1366px) {
   html {
-    background-position: top center;
-    background-attachment: fixed;
+    
     -webkit-background-size: 50vw auto;
     background-size: 50vw auto;
   }
@@ -18,10 +17,9 @@ html {
 
 @media only screen and (max-device-width: 500px) {
   html {
-    background-position: top center;
+    background: top center fixed;
     -webkit-background-size: 50vw auto;
     background-size: 50vw auto;
-    background-attachment: fixed;
   }
 }
 
@@ -381,14 +379,6 @@ mark {
     
 }
 
-
-html, body { 
-		height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0,0,0,.5)
-    position: relative;
-}
 
 #container {
 background: rgba(0, 0, 0, 0.5);
@@ -974,14 +964,14 @@ toc ul ul {
     position: relative;
     color: white;
     font-family: 'Times';
-    font-size: 12pt;
+    font-size: .9em;
     line-height: 1.5em;
     margin-left: 10em;
     border-bottom: rgb(230,229,228);
     border-bottom-style: solid;
     border-width: .5px;
-    min-width: 800px; 
-    padding: 20vw 10vw 20vw 25vw;
+    min-width: 600px; 
+    padding: 20vw 10vw 20vw 15vw;
   }
   
 }
