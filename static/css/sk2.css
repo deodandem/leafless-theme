@@ -119,6 +119,7 @@ blockquote::-webkit-scrollbar-thumb {
   padding-left: 2em;
   padding-top: .5em;
   padding-bottom: .5em;
+  padding-right: 5em;
   margin-right: 5em;
   width: 40em;
   max-height: fit-content;
@@ -155,17 +156,25 @@ center {
 }
 
 .mono-black {
-  font-family: 'Cardo';
+  font-family: 'Baskerville';
   color: rgb(250,250,250);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 500;
   background: rgb(0,0,0, .7);
   border-radius: 10px;
   padding: 30px 40px 30px 50px;
   text-align: left;
-  margin: .5em 0em 50em 15em;
+  margin: .5em 0em 50em 5em;
   width: fit-content;
   max-width: 350px;
+}
+
+.mono-blank {
+  background-color: rgb(0,0,0,0);
+  color: white;
+  font-family: 'Times';
+  max-width: fit-content;
+  margin: 50em auto 50em 20em;
 }
 
 .mono-grey {
