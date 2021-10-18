@@ -7,6 +7,14 @@ html {
   background-size: cover;
 }
 
+@media (min-width: 1500px) {
+  html {
+    background: center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-device-width: 1366px) {
   html {
     background: top center fixed;
