@@ -2,25 +2,13 @@ html {
   font-family: 'Helvetica Neue';
   font-size: 16px;
   font-weight: 350;
-  background:  top center fixed;
+  height: 100%;
+  background:  no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
-}
-
-@media (min-width: 1500px) {
-  html {
-    background: center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-}
-
-@media only screen and (max-device-width: 1366px) {
-  html {
-    background: top center fixed;
-    -webkit-background-size: auto 100vh;
-    background-size: auto 100vh;
-  }
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
 }
 
 @media only screen and (max-device-width: 500px) {
@@ -159,7 +147,7 @@ center {
   border-radius: 10px;
   padding: 30px 40px 30px 50px;
   text-align: left;
-  margin: .5em auto 6em 3em;
+  margin: .5em auto 6em 5em;
   width: fit-content;
 }
 
@@ -230,9 +218,10 @@ to {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .mono-trans {
     font-size: 10px;
+    margin-left: 25%;
   } 
 }
 
