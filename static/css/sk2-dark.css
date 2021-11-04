@@ -34,7 +34,7 @@ hr.between-updates:after {
 }
 
 p {
-	  font-family: 'Cardo';
+	  font-family: 'Times';
     font-size: 1.1em;
     margin-left: 4em;
     margin-right: 4em;
@@ -184,15 +184,19 @@ blockquote::-webkit-scrollbar-thumb {
     font-variant: small-caps;
 }
 .content-box {
-	  font-family: 'Baskerville';
+	  font-family: 'Times';
     background-color: black;
     border: 1px solid grey;
-    max-width: 850px;
-    padding-top: 3em;
+    width: 75%;
+    max-width: 50em;
+    padding-top: 5em;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 3em;
-    margin: auto;
+    font-family: 'Times';
+    font-size: 1em;
+    margin: 0em auto 2em auto;
+    line-height: 1.7em
     
 }
 
@@ -238,6 +242,7 @@ html, body {
     background-color: black;
     position: relative;
 }
+
 
 #container {
 background: rgba(0, 0, 0, 0.5);
