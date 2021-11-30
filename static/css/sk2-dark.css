@@ -138,7 +138,7 @@ blockquote::-webkit-scrollbar-thumb {
   margin-left: 5vw;
   margin-top: 3em;
   margin-bottom: 3em;
-  padding-right: 5em;
+  padding-right: 2em;
   font-size: 20px;
 }
 
@@ -173,6 +173,13 @@ blockquote::-webkit-scrollbar-thumb {
   float: left;
   font-size:5.3em;
   padding: .35em .15em 0.1em 0em;
+}
+
+.dropcap-small {
+  font-family: 'Cardo';
+  float: left;
+  font-size:5em;
+  padding: .4em .15em 0.1em 0em;
 }
 
 .subtitle {
