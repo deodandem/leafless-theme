@@ -108,6 +108,26 @@ blockquote::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
+
+.wrapper { 
+  margin: auto; 
+  text-align: center; 
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px !important;
+  width: 800px;
+  padding-top: 5px;
+}
+
+.scrolls { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 1000px;
+white-space:nowrap
+} 
+
 .white {
   border-left: 3px solid ;
   rgb(200,200,200);
@@ -280,8 +300,8 @@ to {
   font-family: 'Times';
   font-weight: 100;
   float: left;
-  font-size: 5em;
-  padding: .35em .2em 0.1em 0em;
+  font-size: 5.5em;
+  padding: .35em .2em 0.1em .1em;
 }
 
 .dropcap-t {
