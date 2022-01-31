@@ -482,7 +482,8 @@ a:hover {
 
 .h {
   font-family: 'Helvetica Neue'; font-weight: 400;
-  width: 80%; margin: 0em auto 1em auto;
+  width: 60%; margin: 0em auto 1em auto;
+  text-align: justify;
   }
 
 /* The sidebar menu */
