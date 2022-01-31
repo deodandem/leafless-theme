@@ -1,47 +1,47 @@
 {{define "main"}}
 <div class="main">
-  <html style="background-image: url('/img/nov/mukilteo-sun.jpg')">
-	<!--_index.md-->
-	{{if not .IsHome}}
-	{{with .Title}}
-	<div>
-		<heading>{{.}}</heading>
-	</div>
-	{{end}}
-	{{with .Content}}
-	<div>
-		<article>{{.}}</article>
-	</div>
-	{{end}}
-	{{end}}
+  <html style="background-image: url('/img/trichopilia/DSCF2651.JPG')">
 
+<!--_index.md-->
+{{if not .IsHome}}
+{{with .Title}}
+<div>
+  <heading>{{.}}</heading>
+</div>
+{{end}}
+{{with .Content}}
+<div>
+  <article>{{.}}</article>
+</div>
+{{end}}
+{{end}}
 
-	<!--list-->
-	<div class="flex">
-		{{range (.Paginator 48).Pages}}
-        {{ if not .Params.hidden }}
-					<a href="{{.RelPermalink}}">
-        	<div class="card" style="background-image: url({{.Param "thumbnail"}})">			
-					<h3>{{.Title}}</h3>            
-			{{with .PublishDate}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
-			{{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}
-            {{if site.Params.file}}<img src="{{.File.Path}}" width=100px>{{end}}
-		</div>
-        </a>
-        {{ end }}
+<!--$paginator-->
+{{$p := .Pages}}
+{{if .IsHome}}
+{{$p = where site.RegularPages "Section" "in" .Site.Params.mainSections}}
+{{else if eq .Kind "taxonomy"}}
+{{$p = $p.ByTitle}}
+{{end}}
+{{$paginator := .Paginate $p}}
 
-		{{end}}
-	</div>
-    
-    
-	<!--pagination-->
+<!--list-->
+<section class="flex">
+  {{ range $paginator.Pages }}
+  <a href="{{.RelPermalink}}">
+  <div class="card" style="background-image: url({{.Param "thumbnail"}})">
+      <h3>{{.Title}}</h3>
+    {{with .Lastmod}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
+    {{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}	
+  </div> </a>
+  {{end}}
+</section>
 
- {{ if gt $.Paginator.TotalPages 1 }}
 <div class="pagination">
   {{ $pag := .Paginator }}
 
   {{ $adjacent_links := 1 }}
-  {{ $max_links := (add (mul $adjacent_links 2) 1) }}
+  {{ $max_links := (add (mul $adjacent_links 3) 1) }}
   {{ $lower_limit := (add $adjacent_links 1) }}
   {{ $upper_limit := (sub $pag.TotalPages $adjacent_links) }}
 
@@ -97,11 +97,7 @@
   <a href="{{ $pag.Next.URL }}" aria-label="Next" class="page-tag">→</a>
   {{ end }}
 </div>
-{{ end }}
-    
-    
-
-</div>
-
-
 {{end}}
+
+
+

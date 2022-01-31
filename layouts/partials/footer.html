@@ -32,17 +32,16 @@
          </nav>
 
     
-	{{if site.Copyright}}
-		<div class="footer">{{site.Copyright}}
-	{{else}}
+		<div class="footer">
+			<div style="color: grey; margin-bottom:1em">
+			Last update: {{ now.Format "1/02/2006" }}</div>
 		©
 		{{with site.Params.startdate}}
 			{{dateFormat "2006" .}}-
 		{{- end}}
 		{{- now.Format "2006"}} DCP —
-	{{end}}
-	Powered by <a href="https://gohugo.io">&nbsp;Hugo</a> — 
-    Theme <a href="https://github.com/J-Siu/hugo-theme-sk2/">&nbsp;SK2</a></div>
+	Powered by <a href="https://gohugo.io">&nbsp;Hugo</a>
+ </div>
 
 </footer>
 

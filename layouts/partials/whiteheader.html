@@ -1,0 +1,46 @@
+<header class="flex">
+	
+    <div class="poembutton">
+        <a href="/msg/entrance">✦</a><br><br>
+    </div>
+    
+    <div class="title"><a href="{{relLangURL ""}}">{{site.Title}}</a>
+    
+    {{with site.Params.subtitle}}<div class="subtitle">{{.}}</div>{{end}}
+    
+    {{if site.Menus}}
+    <!--
+    <button type="button" class="collapsible">Menu</button>
+    -->
+    <nav class="menubar">
+        {{$currentPage := .}}
+        {{range site.Menus.main}}
+            {{if .HasChildren}}
+            <li class="{{if $currentPage.HasMenuCurrent "main" .}}active{{end}}">
+                <a href="#">
+                    {{.Pre}}
+                    <span>{{.Name}}</span>
+                </a>
+            </li>
+            <ul>
+                {{range .Children}}
+                <li class="{{if $currentPage.IsMenuCurrent "main" .}}active{{end}}">
+                    <a href="{{.URL}}">{{.Name}}</a>
+                </li>
+                {{end}}
+            </ul>
+            {{else}}
+            <li>
+                <a href="{{.URL}}">
+                    {{.Pre}}
+                    <span>{{.Name}}</span>
+                </a>
+            </li>
+            {{end}}
+        {{end}}
+    </nav>
+    {{end}}
+        
+        </div>
+    
+    </header>
