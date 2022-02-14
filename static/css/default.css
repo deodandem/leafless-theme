@@ -55,11 +55,13 @@ html {
   }
   
   p {
-      margin-left: 3em;
-      margin-right: 3em;
+      margin-left: 10%;
+      margin-right: 10%;
       line-height: 1.9em;
       font-family: 'Times';
       font-size: 1.1em;
+      width: 60%;
+      max-width: 60em;
       
   }
   
@@ -175,7 +177,7 @@ html {
     border-radius: 10px;
     padding: 30px 40px 30px 50px;
     text-align: left;
-    margin: .5em auto 6em 5em;
+    margin: .5em auto 6em 20%;
     width: fit-content;
   }
   
@@ -188,7 +190,8 @@ html {
     border-radius: 10px;
     padding: 30px 40px 30px 50px;
     text-align: left;
-    margin: .5em 0em 50em 5em;
+    margin: .5em 0em 50em 25%;
+    
     width: fit-content;
     max-width: 350px;
   }
