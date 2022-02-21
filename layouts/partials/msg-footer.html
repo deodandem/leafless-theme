@@ -6,9 +6,27 @@
         ← {{.Title}}</a> {{end}}</div>
 				{{with .NextInSection}}<div class="rightnav"><a href="{{.RelPermalink}}">{{.Title}} →</a>{{end}}</div>
     {{end}}
-</footer>
+
 
 <!--js-->
 {{with site.Menus.main}}
 <script src="{{relLangURL ""}}js/sk2.js"></script>
 {{end}}
+
+
+<script>
+	var tooltipSpan = document.getElementsByClassName("tooltip-reveal");
+  
+	window.onmousemove = function(e) {
+	var x = e.clientX,
+	  y = e.clientY;
+  
+	for (var i = 0; i < tooltipSpan.length; i++) {
+	  tooltipSpan[i].style.top = (y + 25) + 'px';
+	  tooltipSpan[i].style.left = (x - 50) + 'px';
+	}
+  
+	};
+  </script>
+
+</footer>

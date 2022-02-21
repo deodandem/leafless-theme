@@ -1,37 +1,31 @@
 {{define "main"}}
 <div class="main">
 
-  <div class="title-black"><a href="/">APL</a></div>
+<div class="title-black"><a href="/">APL</a></div>
 
-	<!--list-->
-	<div class="flex">
-		{{range (.Paginator 50).Pages.Reverse}}
-        {{ if not .Params.hide }}
-					<a href="{{.RelPermalink}}">
-        	<div class="card" style="background-image: url({{.Param "thumbnail"}})">			
-					<h3>{{.Title}}</h3>            
-			{{with .PublishDate}}<div class="card-date">{{dateFormat "2006-01-02" .}}</div>{{end}}
-			{{if site.Params.summary}}<div>{{.Summary}}</div>{{end}}
-            {{if site.Params.file}}<img src="{{.File.Path}}" width=100px>{{end}}
-		</div>
-        </a>
-        {{ end }}
+<!--$paginator-->
+{{$p := (.Paginator 27).Pages }}
+{{$paginator := .Paginate $p.Reverse}}
 
-		{{end}}
-	</div>
-    
-    
-	<!--pagination-->
+<!--list-->
+<section class="flex">
+  {{ range $paginator.Pages.Reverse }}
+  {{ if not .Params.hide }}
+      <a href="{{.RelPermalink}}">
+      <div class="card" style="background-image: url({{.Param "thumbnail"}})">
+          <h3>{{.Title}}</h3>	
+      </div> </a>
+      {{end}}
+  {{end}}
+</section>
 
- {{ if gt $.Paginator.TotalPages 1 }}
-<div class="pagination">
+<div class="pagination" style="padding-bottom: 4em">
   {{ $pag := .Paginator }}
 
   {{ $adjacent_links := 1 }}
-  {{ $max_links := (add (mul $adjacent_links 2) 1) }}
+  {{ $max_links := (add (mul $adjacent_links 3) 1) }}
   {{ $lower_limit := (add $adjacent_links 1) }}
   {{ $upper_limit := (sub $pag.TotalPages $adjacent_links) }}
-
   {{ if $pag.HasPrev }}
   <a href="{{ $pag.Prev.URL }}" aria-label="Previous" class="page-tag">←</a>
   {{ end }}
@@ -39,8 +33,8 @@
   <!-- First page (if current page is greater than allowed limit) -->
   {{ if gt $pag.TotalPages $max_links }}
     {{ if ge $pag.PageNumber $max_links }}
-    <a href="{{ $pag.First.URL }}" aria-label="First" class="page-tag">1</a>
-    <span>...</span>
+    <a href="{{ $pag.Last.URL }}" aria-label="Last" class="page-tag">1</a>
+    <span style="color: grey">...</span>
     {{ end }}
   {{ end }}
 
@@ -75,7 +69,7 @@
   <!-- Show the last page index -->
   {{ if gt $pag.TotalPages $max_links }}
     {{ if le $pag.PageNumber (sub $pag.TotalPages (sub $max_links 1)) }}
-    <span>...</span>
+    <span style="color: grey">...</span>
     <a href="{{ $pag.Last.URL }}" aria-label="Last" class="page-tag">{{ $pag.TotalPages }}</a>
     {{ end }}
   {{ end }}
@@ -83,10 +77,11 @@
   {{ if $pag.HasNext }}
   <a href="{{ $pag.Next.URL }}" aria-label="Next" class="page-tag">→</a>
   {{ end }}
-</div>
-{{ end }}
-    
-    
 
 </div>
+</div>
+</div>
+
 {{end}}
+
+

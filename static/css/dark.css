@@ -306,6 +306,20 @@ background: rgba(0, 0, 0, 0.5);
   align-items: center;
 }
 
+.email {
+  margin: 1em auto 1em 10em;
+  max-width: 35em;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  text-align: justify
+}
+
+.sep {
+  max-width:fit-content;
+  margin: 2em auto 2em auto;
+  font-size: 18px;
+}
+
 .pagination {
     text-align: center;
     letter-spacing: 5px;
@@ -360,7 +374,31 @@ background: rgba(0, 0, 0, 0.5);
   display: block;
 }
 
-
+  /* TOOLTIPS */
+  
+  .tooltip {
+    text-decoration:none;
+    position:relative;
+    cursor: crosshair;
+    word-wrap: break-word;
+  }
+  .tooltip span {
+    display:none;
+  }
+  .tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+    max-width: 250px;
+    padding: 10px;
+    font-family: 'IBM Plex Mono';
+    font-size: 12px;
+    background-color: rgb(0,0,0,.2);
+    opacity: 70%;
+    line-height: 1.5em;
+    border-radius: 5px;
+    z-index: 1;
+  }
 
     
 }

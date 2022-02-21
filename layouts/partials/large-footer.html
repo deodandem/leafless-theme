@@ -6,4 +6,25 @@
 			 {{.Title}} →</a> {{end}}</div>
 				{{with .NextInSection}}<div class="largeleftnav"><a href="{{.RelPermalink}}">← {{.Title}}</a>{{end}}</div>
     {{end}}
+	
+
+<script>
+	var tooltipSpans = document.querySelectorAll('div.tooltip>span');
+
+	window.onmousemove = function(e) {
+	
+	  tooltipSpans.forEach(function(element, index) {
+		let x = e.clientX
+		let y = e.clientY;
+		element.style.top = (y + 20 ) + 'px';
+		element.style.left = (x + 20) + 'px';
+	  })
+	
+	};
+</script>
+
+
+
 </footer>
+
+
