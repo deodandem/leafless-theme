@@ -885,7 +885,44 @@ div .horizontal {
     margin-top: 78%;
   }
   
-  
+ .photocard {
+  margin: 0 auto 0em auto;
+  width: 700px; 
+  height: 600px;
+  padding: 400px 400px 200px 400px;
+  line-height: .6em; color: rgb(255,255,255,.7); font-size: 3em; 
+ }
+
+ .photocard p {
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   padding: inherit;
+ }
+
+ div p {
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  margin-left: 0;
+  width: inherit;
+ }
+
+.cormorant {
+  font-family: 'Cormorant Garamond';
+  color: rgb(255,255,255,.7);
+  }
+  .cormorant p {
+    width: 600px;
+    background-color: inherit;
+    color: inherit;
+    margin: 50px auto 50px auto;
+    font-size: 2em;
+    font-family: inherit;
+    line-height:1.25em;
+  }
+
+
   .tags {
     text-align: center;
     font-size: 1em;
