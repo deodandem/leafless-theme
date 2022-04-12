@@ -1,17 +1,24 @@
 {{define "main"}}
 
 {{if isset .Params "bg"}}
-   <html style="background-image: url({{.Param "bg"}})">
-{{ else }}
+    <html style="background-image: url({{.Param "bg"}})">
+ {{ else }}
    <html style="background-color: black">
 {{ end }}
+
 <body>  
     <!--Content-->
-    
-<div class="homebutton">
-    <a href="/">Home</a><br><br>
-</div>
-    
+
+{{if eq .Params.bg "white"}} <div class="white-homebutton">
+        <a href="/">Home</a><br><br>
+    </div> 
+       
+        {{ else }}
+        <div class="homebutton">
+            <a href="/">Home</a><br><br>
+        </div>
+            {{ end }}
+
 
 <div class="largebox";>  
     {{with .Content}}<content>{{.}}</content>{{end}}

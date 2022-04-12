@@ -1,11 +1,18 @@
 <footer class="footer">
     <!--Prev/Next-->
 	{{if or .PrevInSection .NextInSection}}
+	{{if eq .Params.bg "white"}}
+		<div class="largerightnav">
+			{{with .PrevInSection}}<a href="{{.RelPermalink}}" style="color:rgb(0,0,0,.5);">
+				{{.Title}} →</a> {{end}}</div>
+				   {{with .NextInSection}}<div class="largeleftnav"><a href="{{.RelPermalink}}" style="color:rgb(0,0,0,.5);">← {{.Title}}</a>{{end}}</div>
+	{{ else }}
 	<div class="largerightnav">
 		{{with .PrevInSection}}<a href="{{.RelPermalink}}">
 			 {{.Title}} →</a> {{end}}</div>
-				{{with .NextInSection}}<div class="largeleftnav"><a href="{{.RelPermalink}}">← {{.Title}}</a>{{end}}</div>
+				{{with .NextInSection}}<div class="largeleftnav"><a href="{{.RelPermalink}}" style="color:rgb(0,0,0,.5);">← {{.Title}}</a>{{end}}</div>
     {{end}}
+	{{end}}
 	
 
 <script>
@@ -16,8 +23,8 @@
 	  tooltipSpans.forEach(function(element, index) {
 		let x = e.clientX
 		let y = e.clientY;
-		element.style.top = (y + 20 ) + 'px';
-		element.style.left = (x + 20) + 'px';
+		element.style.top = (y + 15 ) + 'px';
+		element.style.left = (x + 15 ) + 'px';
 	  })
 	
 	};
