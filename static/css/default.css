@@ -131,6 +131,21 @@ html {
  
   }
 
+  .email {
+    margin: 1em auto 1em 50px;
+    max-width: 650px;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .sep {
+    width: 750px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 18px;
+  }
 
   .white-window {
     width: 600px;
@@ -139,13 +154,15 @@ html {
     margin: 10% auto 10% auto;
     padding: 70px 70px 70px 70px;
     border: 1px solid black;
-    font-size: 18px; 
+    font-size: 16px; 
     color: rgb(0,0,0,.9); 
+    font-family: 'Helvetica';
    }
  
    .white-window p {
-     font-family: 'Times';
+     font-family: inherit;
      color: rgb(0,0,0,.9); 
+     font.size: 16px;
    }
  
    .white-window div {
@@ -498,6 +515,14 @@ div .horizontal {
     z-index:-1;
     background: rgb(255, 240, 140,.9);
   }
+
+  .grey {
+    font-weight:300;
+    border: none;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: rgb(0,0,0,.5);
+  }
   
   .largebox {
     display: flex;
@@ -612,8 +637,10 @@ div .horizontal {
   
   .h {
     font-family: 'Helvetica Neue'; font-weight: 400;
-    width: 60%; margin: 0em auto 1em auto;
-    text-align: justify;
+    width: 900px;
+    margin: 0em auto 1em auto;
+    font-size: 18px;
+    line-height:1.7em;
     }
   
   /* The sidebar menu */
