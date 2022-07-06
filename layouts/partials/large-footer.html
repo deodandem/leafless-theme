@@ -31,7 +31,34 @@
 </script>
 
 
+<script>
 
+	$(function() {
+	  var b = $("#collapsible");
+	  var w = $("#wrapper");
+	  var l = $("#stuff");
+	  
+	  w.height(l.outerHeight(true));
+	
+	  b.click(function() {
+	  
+		if(w.hasClass('collapsible-content')) {
+		  w.removeClass('collapsible-content');
+		  w.height(0);
+		} else {
+		  w.addClass('collapsible-content');
+		  w.height(l.outerHeight(true));
+		}
+	  
+	  });
+	});
+	
+	</script>
+
+
+
+
+</script>
 </footer>
 
 
