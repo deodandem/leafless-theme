@@ -173,6 +173,7 @@ center {
   font-weight: 400;
   background: rgb(240,240,240, .6);
   border-radius: 10px;
+  border-left: none;
   padding: 30px 40px 30px 50px;
   text-align: left;
   margin: .5em auto 6em 5em;

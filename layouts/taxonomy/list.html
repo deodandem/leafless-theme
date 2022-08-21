@@ -1,11 +1,12 @@
 {{define "main"}}
 <div class="main">
+  <html style="background-color: black">
 
 	<!--_index.md-->
 	{{if not .IsHome}}
 	{{with .Title}}
 	<div class="tags-list">
-		<heading>Tagged: {{.}}</heading>
+		<heading style="color: white;">{{.}}</heading>
 	</div>
 	{{end}}
 	{{with .Content}}
@@ -17,7 +18,7 @@
 
 
 	<!--list-->
-	<div class="flex">
+	<div class="flex" style="margin-top: 100px;">
 		{{range (.Paginator 20).Pages}}
         {{ if not .Params.hidden }}
 		<a href="{{.RelPermalink}}">
@@ -98,7 +99,6 @@
   {{ end }}
 </div>
 {{ end }}
-    
     
 
 </div>
