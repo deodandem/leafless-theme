@@ -679,7 +679,6 @@ div .horizontal {
     border-style: solid;
     border-width:1px;
     margin-right:1px;
-    font-weight:bold;
     z-index:-1;
     background: rgb(255, 240, 140,.9);
   }
