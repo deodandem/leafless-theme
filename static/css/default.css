@@ -262,7 +262,7 @@ html {
     }
       
     .toggle:checked +.h-toggle + .h-collapsible {
-      max-height: 800px;
+      max-height: 100em;
       overflow-y: scroll;
     }
 
@@ -372,15 +372,15 @@ html {
    }
 
    .white-round-corners {
-    font-size:.94em;
+    font-size:15px;
+    line-height:1.7em;
     font-family: 'Helvetica';
-    padding: 2.5em;
+    padding: 2em 3em 2em 3em;
     height: fit-content;
     width:40em;
-    line-height:1.5em;
     color: rgb(255,255,255,.8);
-    margin: 25px 25px 25px 0px; 
-    border-radius: 15px;
+    margin: 2em 2em 2em 0em; 
+    border-radius: .9em;
     border: rgb(255,255,255,.5) solid 1px;
    }
 
@@ -1132,12 +1132,12 @@ div .horizontal {
   
   
   .pagination li,
-header nali v {
+  header nav li {
   color: black;  
-  }
-  
-  t-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+
   }
   
   .subtitle {
