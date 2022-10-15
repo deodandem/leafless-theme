@@ -443,7 +443,7 @@ html {
 }
 
 div .horizontal {
-  font-size:15px;
+  font-size:.94em;
   overflow-x: scroll;
   margin: 4em 2em 4em 2em;
   padding: auto 100px auto 100px;
