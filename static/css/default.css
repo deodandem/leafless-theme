@@ -374,9 +374,9 @@ html {
    .white-round-corners {
     font-size:.94em;
     font-family: 'Helvetica';
-    width: 500px;
-    padding: 40px;
+    padding: 2.5em;
     height: fit-content;
+    width:40em;
     line-height:1.5em;
     color: rgb(255,255,255,.8);
     margin: 25px 25px 25px 0px; 
