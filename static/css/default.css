@@ -476,6 +476,7 @@ html {
 }
 
 .october {
+  margin-right: 2em;
   font-family: 'Helvetica';
   font-size: 14px;
   color: rgb(250,0,0);
@@ -483,6 +484,14 @@ html {
   padding: 2em;
 }
 
+p .october {
+  margin-right: 2em;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: inherit;
+  line-height:1.5em;
+  padding: 2em;
+}
 
 
 .horizontal::-webkit-scrollbar {
