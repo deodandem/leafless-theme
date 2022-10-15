@@ -260,7 +260,7 @@ html {
     }
       
     .toggle:checked +.h-toggle + .h-collapsible {
-      max-height: 100em;
+      max-height: 200em;
       overflow-y: scroll;
     }
 
@@ -327,9 +327,6 @@ html {
         height: 5px;               /* width of the entire scrollbar */
       }
       
-
-
-
 .sep {
     width: 750px;
     text-align: center;
@@ -372,16 +369,17 @@ html {
     font-size: 14px;
     line-height:1.6em;
     font-family: 'Helvetica';
-    padding: 2em 3em 2em 3em;
+    padding: 30px 40px 30px 40px;
     height: fit-content;
     width:40em;
     color: rgb(255,255,255,.8);
-    margin: 2em 2.5rem 2em 0em; 
-    border-radius: .9em;
+    margin: 10px 50px 40px 0px; 
+    border-radius: 15px;
     border: rgb(255,255,255,.5) solid 1px;
    }
 
   blockquote {
+    font-size:12px;
     margin: 2em auto 2em 5%;
     border-left: 3px solid rgb(200,200,200);
     border-radius: 5px;
