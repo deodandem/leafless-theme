@@ -1622,3 +1622,11 @@ toc li {
     line-height:1.5em;
     padding: 2em;
 }
+
+.october p {
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: inherit;
+  font-family: 'Helvetica';
+  font-size: 14px;
+}
