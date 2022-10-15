@@ -378,6 +378,13 @@ html {
     border: rgb(255,255,255,.5) solid 1px;
    }
 
+   .white-round-corners p {
+    font-size: 14px;
+    line-height:1.6em;
+    font-family: 'Helvetica';
+    color: rgb(255,255,255,.8);
+   }
+
   blockquote {
     margin: 2em auto 2em 0;
     border-left: 3px solid rgb(0,0,0,.1);
@@ -1425,11 +1432,10 @@ ul.dashedli  > {
   
 toc li {
   color: black;  
+  list-style-type: none;
   }
   
-  t-style-type: none;
-  }
-  
+
   toc ul {
     margin-left: 0px;
     padding-left: 0;
@@ -1627,6 +1633,4 @@ toc li {
   font-family: 'Helvetica';
   font-size: 14px;
   color: inherit;
-  font-family: 'Helvetica';
-  font-size: 14px;
 }
