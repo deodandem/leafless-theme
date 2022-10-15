@@ -1,7 +1,7 @@
 html {
     font-family: 'Helvetica Neue';
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 300;
     height: 100%;
     background:  no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -365,7 +365,7 @@ html {
   
    }
 
-   div .white-round-corners {
+  .white-round-corners {
     font-size: 14px;
     line-height:1.6em;
     font-family: 'Helvetica';
@@ -378,7 +378,7 @@ html {
     border: rgb(255,255,255,.5) solid 1px;
    }
 
-   p .white-round-corners {
+   .white-round-corners p {
     font-size: 14px;
     line-height:1.6em;
     font-family: 'Helvetica';
@@ -463,7 +463,7 @@ html {
   font-family: 'Cormorant Garamond'; font-size: 16px; line-height: 1.7em; width: 420px; height: 420px; background-color: rgb(0,0,0,.3); color: rgb(255,255,255,1); margin-left:200px; padding:10px; border-radius:10px;
 }
 
-div .horizontal {
+.horizontal {
   overflow-x: scroll;
   margin: 4em 2em 4em 2em;
   padding: auto 100px auto 100px;
@@ -475,7 +475,7 @@ div .horizontal {
 
 }
 
-div .october {
+.october {
   font-family: 'Helvetica';
   font-size: 14px;
   color: rgb(250,0,0);
