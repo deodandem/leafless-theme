@@ -372,7 +372,7 @@ html {
    }
 
    .white-round-corners {
-    font-size:14px;
+    font-size: .9rem;
     line-height:1.6em;
     font-family: 'Helvetica';
     padding: 2em 3em 2em 3em;
