@@ -313,7 +313,7 @@ html {
     .h-collapsible {
       max-height: 0px;
       margin: 50px auto 0px auto; 
-      overflow: hidden;
+      overflow: scroll;
       transition: max-height .4s ease-in-out;
   }
 
@@ -378,12 +378,7 @@ html {
     border: rgb(255,255,255,.5) solid 1px;
    }
 
- div .white-round-corners p {
-    font-size: 14px;
-    line-height:1.6em;
-    font-family: 'Helvetica';
-    color: rgb(255,255,255,.8);
-   }
+
 
   blockquote {
     margin: 2em auto 2em 0;
