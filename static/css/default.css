@@ -378,7 +378,7 @@ html {
     border: rgb(255,255,255,.5) solid 1px;
    }
 
-   p .white-round-corners {
+ div .white-round-corners p {
     font-size: 14px;
     line-height:1.6em;
     font-family: 'Helvetica';
@@ -1164,7 +1164,6 @@ p .october {
       font-size: 12px;
   }
   
-  
   .pagination li,
   header nav li {
   color: black;  
@@ -1184,7 +1183,7 @@ p .october {
     margin: 0 4em 0 2em;
     line-height: 1.7em;
     list-style-type: none; 
-    padding-left: 45px;
+    padding-left: 40px;
     position: relative;
     }
 
@@ -1201,9 +1200,8 @@ p .october {
   ul > li:before {
     content: "–";
     font-weight: 600;
-    text-indent: 5px;
-    left: 22px; 
-    position: absolute;
+    text-indent: 20px;
+    left: 20px; 
   }
 
   ul ul {
@@ -1216,23 +1214,25 @@ p .october {
     color: rgb(255,255,255,.9);
     font-size: .8em;
     font-family: 'IBM Plex Mono';
-    margin-left: 0;
+    margin-left: 0em;
     margin-right: 0em;
     list-style-type: none;
   }
-ul.dashedli  > {
+
+
+  ul.dashed li > {
   color: black;  
+  font-family: inherit;
+  margin-left:5em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+
   }
-  
-  t-family: inherit;
-    text-indent: 0px;
-    margin-bottom: .5em;
-    margin-top: .5em;
-  }
+
   ul.dashed > li:before {
     content: "– ";
     font-weight: 400;
-    text-indent: 0px;
+    text-indent: 10px;
   }
   
   .main,
@@ -1316,16 +1316,16 @@ ul.dashedli  > {
   width: inherit;
   color: inherit;
  }
- .black-wli indow p ol, ul, {
+
+ .black-window p, ol, ul, li {
   color: black;
- }{
-  
-  amily: inherit;
+  font-family: inherit;
   color: inherit;
   font-size: inherit;
   padding: none;
   margin-left: 0;
  }
+  
 
 .wide {
   font-family: 'IBM Plex Mono';
