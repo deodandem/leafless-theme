@@ -372,7 +372,6 @@ html {
     font-family: 'Helvetica';
     padding: 30px 40px 30px 40px;
     margin-right: 2em;
-    margin-left: 1vw;
     color: rgb(255,255,255,.8);
     border-radius: 15px;
     border: rgb(255,255,255,.5) solid 1px;
@@ -461,7 +460,7 @@ html {
 .horizontal {
   overflow-x: scroll;
   margin: 4em 2em 4em 2em;
-  padding: auto 100px auto 100px;
+
   width: fit-content;
   height: fit-content;
   display: flex;
