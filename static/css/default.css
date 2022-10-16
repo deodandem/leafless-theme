@@ -141,7 +141,7 @@ html {
 
   .h-toggle {
       cursor: pointer;
-      margin: 70px 0 0 10vw;
+      margin: 70px 0 0 7vw;
       font-family: 'Cormorant Garamond';
       font-size:2em;
       line-height:1.5em;
@@ -369,7 +369,7 @@ html {
     font-size: 14px;
     line-height:1.6em;
     font-family: 'Helvetica';
-    padding: 40px 40px 30px 40px;
+    padding: 30px 40px 30px 40px;
     height: fit-content;
     width:40em;
     color: rgb(255,255,255,.8);
@@ -462,7 +462,6 @@ html {
   overflow-x: scroll;
   margin: 4em 2em 4em 2em;
   padding: auto 100px auto 100px;
-  width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: row;
