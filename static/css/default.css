@@ -371,9 +371,9 @@ html {
     font-family: 'Helvetica';
     padding: 30px 40px 30px 40px;
     height: fit-content;
-    width:40em;
+    width:35em;
     color: rgb(255,255,255,.8);
-    margin: 10px 50px 40px 0px; 
+    margin: 20px 25px 40px 10px; 
     border-radius: 15px;
     border: rgb(255,255,255,.5) solid 1px;
    }
