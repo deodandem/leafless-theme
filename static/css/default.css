@@ -368,11 +368,11 @@ html {
   .white-round-corners {
     font-size: 14px;
     line-height:1.6em;
+    height: fit-content;
     font-family: 'Helvetica';
     padding: 30px 40px 30px 40px;
-    height: fit-content;
     margin-right: 2em;
-    width: fit-content;
+    margin-left: 1vw;
     color: rgb(255,255,255,.8);
     border-radius: 15px;
     border: rgb(255,255,255,.5) solid 1px;
