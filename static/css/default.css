@@ -460,7 +460,7 @@ html {
 .horizontal {
   overflow-x: scroll;
   margin: 4em 2em 4em 2em;
-
+  padding: auto 100px auto 100px;
   width: fit-content;
   height: fit-content;
   display: flex;
