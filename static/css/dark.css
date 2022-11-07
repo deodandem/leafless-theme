@@ -35,7 +35,7 @@ hr.between-updates:after {
 
 p {
 	  font-family: 'Times';
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 4em;
     margin-right: 4em;
     line-height: 1.8em;
@@ -95,7 +95,7 @@ blockquote {
     border-left: 3px solid rgb(200,200,200);
     border-radius: 5px;
     padding-left: 20px;
-    width: 65%;
+    padding-right: 100px;
     margin: 2em auto 2em 6em;
     text-align: justify;
     font-family: Times;
@@ -222,11 +222,11 @@ blockquote::-webkit-scrollbar-thumb {
 	  font-family: 'Times';
     background-color: black;
     border: 1px solid grey;
-    width: 75%;
+    width: 65vw;
     max-width: 50em;
     padding-top: 5em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 3em;
     font-family: 'Times';
     font-size: 1em;

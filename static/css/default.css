@@ -478,6 +478,29 @@ html {
   padding: 2em;
 }
 
+.november {
+  min-width: 500px;
+  height: 1000px; 
+  overflow: scroll;
+  font-family: 'Helvetica';
+  font-weight: 300;
+  font-size: 12px;
+  line-height:1.5em;
+  margin: 100px 20px 200px 20px;
+  color: rgb(230,230,220,.5);
+  text-shadow: 0 0 8px rgb(200,200,200);
+  border-radius:20px;
+  background-color: rgb(0,0,0,.5);
+  padding: 50px;
+}
+.november blockquote {
+  font-family: 'Baskerville';
+  font-size: inherit;
+  margin: 0em 2em 2em 1em;
+  padding: -10px 0 -10px 20px;
+  border-left: 3px solid rgb(255,255,255,.2);
+}
+
 p .october {
   margin-right: 2em;
   font-family: 'Helvetica';
@@ -548,7 +571,7 @@ p .october {
     border-left: none;
     padding: 30px 40px 30px 50px;
     text-align: left;
-    margin: .5em auto 6em 20%;
+    margin: .5em auto 6em 7vw;
     width: fit-content;
   }
   
@@ -589,7 +612,7 @@ p .october {
     text-align: left;
     margin: .5em 0em 5em 15em;
     width: fit-content;
-    max-width: 350px;
+    max-width: 600px;
   }
   .mono-white {
     font-family: 'Times';
