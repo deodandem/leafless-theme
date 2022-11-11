@@ -380,7 +380,7 @@ html {
 
 
   blockquote {
-    margin: 2em auto 2em 0;
+    margin: 2em auto 2em 30px;
     border-left: 3px solid rgb(0,0,0,.1);
     border-radius: 5px;
     padding: 0px 5px 0px 20px;
@@ -388,8 +388,7 @@ html {
     line-height: 1.7em;
     max-height: 50em;
     overflow-y: auto;
-    overflow-x: hidden;
-    max-width: 550px;
+    width:90%;
   }
 
   .august {
@@ -481,7 +480,7 @@ html {
 .november {
   min-width: 500px;
   height: 1000px; 
-  overflow: scroll;
+  overflow: auto;
   font-family: 'Helvetica';
   font-weight: 300;
   font-size: 12px;
@@ -493,12 +492,25 @@ html {
   background-color: rgb(0,0,0,.5);
   padding: 50px;
 }
+
 .november blockquote {
   font-family: 'Baskerville';
   font-size: inherit;
   margin: 0em 2em 2em 1em;
   padding: -10px 0 -10px 20px;
   border-left: 3px solid rgb(255,255,255,.2);
+}
+
+.epistole {
+  width:700px;
+  margin: 0 auto 0 auto;
+  color: rgb(210,210,210); font-family: 'Helvetica'; font-size:14px; font-weight:400;
+}
+
+.epistole blockquote {
+  width:650px;
+  margin: 20px auto 20px auto;
+  padding-right:25px;
 }
 
 p .october {
