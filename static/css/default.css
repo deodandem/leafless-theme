@@ -139,6 +139,18 @@ html {
   .wrap-collapsible {
     margin: 50px auto 50px auto; }
 
+  .wrap-collapsible::-webkit-scrollbar {
+    display: none;
+  }
+
+  .h-collapsible::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .h-inner::-webkit-scrollbar {
+    display: none;
+  }
+
   .h-toggle {
       cursor: pointer;
       margin: 70px 0 0 7vw;
@@ -478,7 +490,7 @@ html {
 }
 
 .november {
-  min-width: 500px;
+  min-width:500px;
   height: 1000px; 
   overflow: auto;
   font-family: 'Helvetica';
@@ -490,7 +502,11 @@ html {
   text-shadow: 0 0 8px rgb(200,200,200);
   border-radius:20px;
   background-color: rgb(0,0,0,.5);
-  padding: 50px;
+  padding: 50px 50px 50px 50px;
+}
+
+.november::-webkit-scrollbar {
+  display: none;
 }
 
 .november blockquote {
