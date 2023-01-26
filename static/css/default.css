@@ -20,9 +20,9 @@ html {
   }
   
   hr {
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
-      width: 50%;
+      margin-top: 75px;
+      margin-bottom: 75px;
+      width: 40%;
   }
   
   hr.between-updates {
@@ -37,6 +37,10 @@ html {
       margin: 3em auto 3em;
       overflow: visible;
   
+  }
+
+  .page-tag {
+    letter-spacing: 1px;
   }
   
   hr.pagediv {
@@ -514,9 +518,8 @@ html {
   margin: 100px 20px 200px 20px;
   color: rgb(230,230,220,.5);
   text-shadow: 0 0 8px rgb(200,200,200);
-
   background-color: rgb(0,0,0,.5);
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 20px;
 }
 
 .november::-webkit-scrollbar {
@@ -713,12 +716,9 @@ p .october {
     font-family: 'Times';
     font-size: 12pt;
     line-height: 1.5em;
-    margin-left: 0em;
-    border-bottom: rgb(230,229,228);
-    border-bottom-style: solid;
-    border-width: .5px;
-    width: 30vw;
-    padding: 20vw 10vw 20vw 10vw;
+    margin:100px auto 250px auto;
+    width: 400px;
+
   }
   
   
@@ -933,7 +933,7 @@ p .october {
   }
   
   .pagination a {
-      color:grey;
+      color:rgb(200,200,200);
       font-size: 20px;
   }
 
@@ -1317,7 +1317,7 @@ p .october {
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: top;
-    background-color: rgb(100,100,100,.5);
+    background-color: none;
     transition: 0.3s ease-in-out;
   }
   
@@ -1591,22 +1591,7 @@ toc li {
   
   }
   
-  @media (max-width: 1380px) {
-    .sonnet {
-      position: relative;
-      color: white;
-      font-family: 'Times';
-      font-size: .9em;
-      line-height: 1.5em;
-      margin-left: 10em;
-      border-bottom: rgb(230,229,228);
-      border-bottom-style: solid;
-      border-width: .5px;
-      min-width: 600px; 
-      padding: 20vw 10vw 20vw 15vw;
-    }
-    
-  }
+
   
 
   /* june */ 

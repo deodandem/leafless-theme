@@ -1,0 +1,31 @@
+<html style="background-color: white;">
+
+
+<div style="width: fit-content; margin: 0px auto 50px auto;">
+
+<div style="margin: 100px 0px 50px 100px; width: fit-content; font-family: 'Helvetica'; float: left;">
+
+    {{ range (.Site.RegularPages.GroupByDate "2006")  }}
+        {{ if (where .Pages "Section" "posts") }}
+            <h2>{{ .Key }}</h2>
+            <ul>
+                {{ range ((where .Pages "Section" "posts")) }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">
+                        {{ .PublishDate.Format "Jan 02" }} : {{ .Title }}
+                        </a>
+                    </li>
+                  {{ end }}
+             </ul>
+        {{ end }}
+     {{ end }}
+</div>
+
+<div style="border: 1px solid black; padding: 50px; width: 400px; height:fit-content; margin: 125px 50px 100px 25px; float: left; font-family: 'Helvetica'">
+
+    {{.Content}}
+    
+</div>
+</div>
+
+</html>

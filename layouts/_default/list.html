@@ -38,10 +38,10 @@
 </section>
 
 <div class="pagination">
-  {{ $pag := .Paginator }}
 
+  {{ $pag := .Paginator }}
   {{ $adjacent_links := 1 }}
-  {{ $max_links := (add (mul $adjacent_links 3) 1) }}
+  {{ $max_links := (add (mul $adjacent_links 2) 1) }}
   {{ $lower_limit := (add $adjacent_links 1) }}
   {{ $upper_limit := (sub $pag.TotalPages $adjacent_links) }}
 
@@ -53,7 +53,7 @@
   {{ if gt $pag.TotalPages $max_links }}
     {{ if ge $pag.PageNumber $max_links }}
     <a href="{{ $pag.First.URL }}" aria-label="First" class="page-tag">1</a>
-    <span style="color:grey">...</span>
+    <span style="color:rgb(200,200,200);">...</span>
     {{ end }}
   {{ end }}
 
@@ -88,8 +88,8 @@
   <!-- Show the last page index -->
   {{ if gt $pag.TotalPages $max_links }}
     {{ if le $pag.PageNumber (sub $pag.TotalPages (sub $max_links 1)) }}
-    <span style="color: grey">...</span>
-    <a href="{{ $pag.Last.URL }}" aria-label="Last" class="page-tag">{{ $pag.TotalPages }}</a>
+    <span style="color: rgb(200,200,200);">...</span>
+    <a href="{{ $pag.Last.URL }}" aria-label="Last" class="page-tag" style="letter-spacing: 1px;">{{ $pag.TotalPages }}</a>
     {{ end }}
   {{ end }}
 
@@ -98,6 +98,3 @@
   {{ end }}
 </div>
 {{end}}
-
-
-
