@@ -1203,7 +1203,30 @@ p .october {
     border-radius: 10px;
     padding: 10px 15px 10px 15px;
   }
+
+
+  .meta {
+    padding: 50px; width: 800px;
+    height:fit-content;
+    margin: 125px 50px 100px 25px;
+    font-family: 'Helvetica Neue';
+    color: black;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.5em;
+  }
   
+ .footnotes {
+  width: 900px;
+  height:fit-content;
+  margin: 125px 50px 100px 25px;
+  font-family: 'Helvetica Neue';
+  color: rgb(0,0,0,.7);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.5em;
+    
+  }
   
   
   .footerbar {
