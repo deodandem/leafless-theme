@@ -400,7 +400,7 @@ html {
     margin: 2em auto 2em 30px;
     border-left: 3px solid rgb(0,0,0,.1);
     border-radius: 5px;
-    padding: 0px 5px 0px 20px;
+    padding: 0px 10px 0px 20px;
     text-align: left;
     line-height: 1.7em;
     max-height: 50em;
@@ -441,7 +441,6 @@ html {
   .august p {
     font-family: 'IBM Plex Mono';
   }
-
   
   blockquote::-webkit-scrollbar {
     width: 5px;
@@ -449,11 +448,11 @@ html {
   }
   
   blockquote::-webkit-scrollbar-track {
-    background: black;        /* color of the tracking area */
+    background: rgb(0,0,0,0);        /* color of the tracking area */
   }
   
   blockquote::-webkit-scrollbar-thumb {
-    background-color: rgb(255,255,255,.2);    /* color of the scroll thumb */
+    background-color: rgb(0,0,0,.1);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
   
@@ -831,7 +830,7 @@ p .october {
     padding-top: 1px;
     padding-bottom: .7px;
     border-radius:3px;
-    border-style: solid;
+ 
     border-width:1px;
     margin-right:1px;
     z-index:-1;
@@ -1206,14 +1205,15 @@ p .october {
 
 
   .meta {
-    padding: 50px; width: 800px;
+    padding: 50px;
+    width: 800px;
     height:fit-content;
     margin: 125px 50px 100px 25px;
     font-family: 'Helvetica Neue';
     color: black;
     font-size:16px;
     font-weight:400;
-    line-height:1.5em;
+    line-height:1.7em;
   }
   
  .footnotes {
