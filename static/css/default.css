@@ -447,15 +447,22 @@ html {
     height: 5px;               /* width of the entire scrollbar */
   }
   
-  blockquote::-webkit-scrollbar-track {
+ blockquote::-webkit-scrollbar-track {
     background: rgb(0,0,0,0);        /* color of the tracking area */
   }
+
+  .largequote::-webkit-scrollbar {
+    display: none;        /* color of the tracking area */
+  }
+
   
   blockquote::-webkit-scrollbar-thumb {
     background-color: rgb(0,0,0,.1);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
-  
+
+
+
   div.circle {
     --h:450px;  /*Size of the circle */
     --w:500px;
