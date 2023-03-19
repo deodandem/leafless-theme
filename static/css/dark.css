@@ -132,6 +132,10 @@ blockquote::-webkit-scrollbar {
   height: 10px;               /* width of the entire scrollbar */
 }
 
+.largequote::-webkit-scrollbar {
+  display: none;        /* color of the tracking area */
+}
+
 blockquote::-webkit-scrollbar-track {
   background: black;        /* color of the tracking area */
 }

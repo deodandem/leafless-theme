@@ -397,10 +397,10 @@ html {
 
 
   blockquote {
-    margin: 2em auto 2em 30px;
+    margin: 2em auto 2em 0px;
     border-left: 3px solid rgb(0,0,0,.1);
-    border-radius: 5px;
-    padding: 0px 10px 0px 20px;
+    border-radius: 10px;
+    padding: 0px 50px 0px 30px;
     text-align: left;
     line-height: 1.7em;
     max-height: 50em;
@@ -443,19 +443,28 @@ html {
   }
   
   blockquote::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;               /* width of the entire scrollbar */
+    width: 6px;
+    height: 6px;               /* width of the entire scrollbar */
+    
   }
   
-  blockquote::-webkit-scrollbar-track {
+ blockquote::-webkit-scrollbar-track {
     background: rgb(0,0,0,0);        /* color of the tracking area */
   }
+
+
+  .largequote::-webkit-scrollbar {
+    display: none;        /* color of the tracking area */
+  }
+
   
   blockquote::-webkit-scrollbar-thumb {
-    background-color: rgb(0,0,0,.1);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    background-color: rgb(100,100,100,.1);    /* color of the scroll thumb */
+    border-radius: 25px;       /* roundness of the scroll thumb */
   }
-  
+
+
+
   div.circle {
     --h:450px;  /*Size of the circle */
     --w:500px;
@@ -1134,7 +1143,7 @@ p .october {
     position: fixed;
     top:0;
     margin-top:3em;
-    margin-left: 85%;
+    margin-left: 87%;
     z-index: 1;
   }
 
@@ -1153,7 +1162,7 @@ p .october {
     position: fixed;
     top:0;
     margin-top:3em;
-    margin-left: 85%;
+    margin-left: 87%;
     z-index: 1;
   }
   
@@ -1161,7 +1170,7 @@ p .october {
     font-family: 'Baskerville';
     font-size: 1em;
     color:rgb(255,255,255,.3);
-    background-color: rgb(200,200,200,.2);
+    background-color: rgb(200,200,200,.1);
     border-radius: 15px;
     padding: .7em;
     z-index: 1;
