@@ -15,7 +15,10 @@ html {
     html {
       background: top center fixed;
       background-size: auto cover;
-      font-size: 14px;
+    }
+
+    .standard {
+      font-size:10px;
     }
   }
   
@@ -64,6 +67,11 @@ html {
       font-size: 1.1em;
       max-width: 55em;
   }
+
+.standard {
+  width: 700px;
+  color: black;
+}
   
   img {
       display: flex;
