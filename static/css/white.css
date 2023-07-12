@@ -55,11 +55,12 @@ hr.between-updates:after {
 }
 
 p {
-    margin-left: 3em;
-    margin-right: 3em;
+
     line-height: 1.7em;
     font-family: 'Times';
-    font-size: 1em;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
     
 }
 
@@ -337,8 +338,7 @@ to {
 }
 .content-box {
     border: 1px solid grey;
-    width: 70%;
-    max-width: 50em;
+    max-width: 70vw;
     padding-top: 3em;
     padding-left: 4em;
     padding-right: 4em;

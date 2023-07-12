@@ -1,6 +1,6 @@
 html {
   font-family: 'Baskerville';
-  font-size: 14px;
+  font-size: 18px;
 	color: rgb(235,235,235);
 }
 
@@ -35,9 +35,9 @@ hr.between-updates:after {
 
 p {
 	  font-family: 'Times';
-    font-size: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 1.8em;
     
 }
