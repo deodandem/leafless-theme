@@ -139,7 +139,6 @@ white-space:nowrap
 
 .white {
   border-left: 3px solid ;
-  rgb(200,200,200);
   border-radius: .2em;
   padding-left: 2em;
   padding-top: .5em;
@@ -336,9 +335,10 @@ to {
     font-size: 25px;
     font-variant: small-caps;
 }
+
 .content-box {
     border: 1px solid grey;
-    max-width: 70vw;
+    max-width: 700px;
     padding-top: 3em;
     padding-left: 4em;
     padding-right: 4em;
