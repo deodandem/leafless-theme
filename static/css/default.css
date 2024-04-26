@@ -916,17 +916,17 @@ p .october {
       width: 90%;
       margin: auto;
       margin-top: 100px;
-      text-shadow: 0px 0px 15px black;
+      text-shadow: 0px 0px 5px black;
       font-weight:500;
   }
   
   .title a {
-    color: white;
-    transition: 0.3s ease-in-out;  
+    color: rgb(255,255,255,.9);
+    transition: 0.2s ease-in-out;  
   }
 
   .title a:hover {
-    text-shadow: 0 0 20px black;
+    text-shadow: 0 0 30px black;
   }
   
   .title-black {
@@ -1351,7 +1351,7 @@ p .october {
   }
   
   .card {
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 0 0 10px rgb(0,0,0,.3);
     padding: 25px;
     margin-left: 50px;
@@ -1364,8 +1364,8 @@ p .october {
     background-repeat: no-repeat;
     background-position: top;
     background-color: none;
-    transition: 0.3s ease-in-out;
-    
+    transition: 0.2s ease-in-out;
+    opacity: 90%;  
   }
   
   .card:hover{
@@ -1377,7 +1377,7 @@ p .october {
     font-family: 'Helvetica Neue';
     font-weight: 450;
     text-shadow: 0 0 10px black;
-    color: white;
+    color: rgb(255,255,255,.9);
     font-size:25px;
     margin-block-end: 5px;
     margin-block-start: 5px;
