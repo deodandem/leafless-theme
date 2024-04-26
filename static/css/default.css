@@ -1028,7 +1028,7 @@ p .october {
   .leftnav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    color: rgb(200,200,200, .9);
+    color: rgb(230,230,230, .7);
     font-size: 2em;
     font-family: 'Helvetica Neue';
     display: block;
@@ -1048,7 +1048,7 @@ p .october {
   .rightnav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    color: rgb(200,200,200, .9);
+    color: rgb(230,230,230, .7);
     font-family: 'Helvetica Neue';
     font-size: 2em;
     display: block;
@@ -1502,7 +1502,7 @@ p .october {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    color: grey;
+    color: gray;
     padding-right: 5px;
     margin-top: 4em;
     padding-bottom: 4em;
